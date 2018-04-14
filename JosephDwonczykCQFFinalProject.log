@@ -1,0 +1,668 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.1)  9 APR 2018 06:57
+entering extended mode
+**./JosephDwonczykCQFFinalProject.tex
+(JosephDwonczykCQFFinalProject.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/11/05 v2.16a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen111
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen112
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks17
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks18
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks26
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks27
+\float@box=\box28
+\@float@everytoks=\toks28
+\@floatcapt=\box29
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count104
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\hhline.sty"
+Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count105
+\lst@gtempboxa=\box30
+\lst@token=\toks29
+\lst@length=\count106
+\lst@currlwidth=\dimen122
+\lst@column=\count107
+\lst@pos=\count108
+\lst@lostspace=\dimen123
+\lst@width=\dimen124
+\lst@newlines=\count109
+\lst@lineno=\count110
+\lst@maxwidth=\dimen125
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count111
+\lst@skipnumbers=\count112
+\lst@framebox=\box31
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip49
+\enit@outerparindent=\dimen126
+\enit@toks=\toks30
+\enit@inbox=\box32
+\enitdp@description=\count113
+)
+\c@thm=\count114
+
+(JosephDwonczykCQFFinalProject.aux)
+\openout1 = `JosephDwonczykCQFFinalProject.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=443.57848pt
+* \textheight=681.15898pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count115
+\scratchdimen=\dimen127
+\scratchbox=\box33
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen128
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
+\everyMPtoPDFconversion=\toks32
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\c@lstlisting=\count121
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [1
+
+]
+Chapter 1.
+[2
+
+]
+Chapter 2.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+ [3
+
+]
+Chapter 3.
+
+Overfull \hbox (2116.37256pt too wide) in paragraph at lines 93--124
+ [] 
+ []
+
+[4
+
+]
+Overfull \hbox (1655.05318pt too wide) in paragraph at lines 128--134
+ [] 
+ []
+
+
+Overfull \hbox (2025.81696pt too wide) in paragraph at lines 141--172
+ [] 
+ []
+
+[5] [6]
+Chapter 4.
+[7
+
+]
+Overfull \hbox (421.25076pt too wide) in paragraph at lines 234--240
+ [] 
+ []
+
+[8] [9
+
+]
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
+
+ []
+
+[12] [13] [14]
+Chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+
+ []
+
+<Sonia_Discount_Curve.png, id=67, 722.7pt x 430.7292pt>
+File: Sonia_Discount_Curve.png Graphic file (type png)
+
+<use Sonia_Discount_Curve.png>
+Package pdftex.def Info: Sonia_Discount_Curve.png used on input line 473.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [15
+
+ <./Sonia_Discount_Curve.png>]
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--503
+
+ []
+
+<Hazard_Rates.png, id=73, 722.7pt x 430.7292pt>
+File: Hazard_Rates.png Graphic file (type png)
+ <use Hazard_Rates.png>
+Package pdftex.def Info: Hazard_Rates.png used on input line 508.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [16
+
+]
+[17 <./Hazard_Rates.png>]
+Chapter 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
+
+ []
+
+<Weekly_log_returns.png, id=81, 722.7pt x 430.7292pt>
+File: Weekly_log_returns.png Graphic file (type png)
+
+<use Weekly_log_returns.png>
+Package pdftex.def Info: Weekly_log_returns.png used on input line 543.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [18
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 566--567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--574
+
+ []
+
+<Weekly_absolute_diffs.png, id=86, 722.7pt x 430.7292pt>
+File: Weekly_absolute_diffs.png Graphic file (type png)
+
+<use Weekly_absolute_diffs.png>
+Package pdftex.def Info: Weekly_absolute_diffs.png used on input line 579.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [19 <./Weekly_log_returns.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 589--591
+
+ []
+
+<Inverse_ECDF_Rank.png, id=91, 722.7pt x 430.7292pt>
+File: Inverse_ECDF_Rank.png Graphic file (type png)
+
+<use Inverse_ECDF_Rank.png>
+Package pdftex.def Info: Inverse_ECDF_Rank.png used on input line 596.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [20 <./Weekly_absolute_diffs.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 612--613
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--624
+
+ []
+
+[21 <./Inverse_ECDF_Rank.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 667--668
+
+ []
+
+[23]
+Chapter 9.
+<Gaussian_Copula_1_vs_Gaussian_Copula_2.png, id=106, 722.7pt x 430.7292pt>
+File: Gaussian_Copula_1_vs_Gaussian_Copula_2.png Graphic file (type png)
+
+<use Gaussian_Copula_1_vs_Gaussian_Copula_2.png>
+Package pdftex.def Info: Gaussian_Copula_1_vs_Gaussian_Copula_2.png used on inp
+ut line 681.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+
+<Gaussian_Copula_1.png, id=107, 722.7pt x 430.7292pt>
+File: Gaussian_Copula_1.png Graphic file (type png)
+
+<use Gaussian_Copula_1.png>
+Package pdftex.def Info: Gaussian_Copula_1.png used on input line 689.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [24
+
+ <./Gaussian_Copula_1_vs_Gaussian_Copula_2.png>] <T_Copula_3_vs_T_Copula_4.png,
+ id=113, 722.7pt x 430.7292pt>
+File: T_Copula_3_vs_T_Copula_4.png Graphic file (type png)
+
+<use T_Copula_3_vs_T_Copula_4.png>
+Package pdftex.def Info: T_Copula_3_vs_T_Copula_4.png used on input line 697.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+
+<T_Copula_3.png, id=114, 722.7pt x 430.7292pt>
+File: T_Copula_3.png Graphic file (type png)
+ <use T_Copula_3.png>
+Package pdftex.def Info: T_Copula_3.png used on input line 705.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [25 <./Gaussian_Copula_1.png> <./T_Copula_3_vs_T_Copula_4.png>]
+<Compensation_Leg_Running_Average_(Gaussian_Copula).png, id=120, 722.7pt x 430.
+7292pt>
+File: Compensation_Leg_Running_Average_(Gaussian_Copula).png Graphic file (type
+ png)
+ <use Compensation_Leg_Running_Average_(Gaussian_Copula).png>
+Package pdftex.def Info: Compensation_Leg_Running_Average_(Gaussian_Copula).png
+ used on input line 718.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [26 <./T_Copula_3.png>]
+<Compensation_Leg_Running_Average_(Student's_T_Copula).png, id=125, 722.7pt x 4
+30.7292pt>
+File: Compensation_Leg_Running_Average_(Student's_T_Copula).png Graphic file (t
+ype png)
+ <use Compensation_Leg_Running_Average_(Student's_T_Copula).png>
+Package pdftex.def Info: Compensation_Leg_Running_Average_(Student's_T_Copula).
+png used on input line 726.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+
+<Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png, id=126, 722.7pt x 
+430.7292pt>
+File: Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png Graphic file (
+type png)
+ <use Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png>
+Package pdftex.def Info: Running_Variance_of_Compensation_Leg_(Gaussian_Copula)
+.png used on input line 734.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+
+[27 <./Compensation_Leg_Running_Average_(Gaussian_Copula).png> <./Compensation_
+Leg_Running_Average_(Student's_T_Copula).png>]
+<Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png, id=132, 722.7pt
+ x 430.7292pt>
+File: Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png Graphic fil
+e (type png)
+
+<use Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png>
+Package pdftex.def Info: Running_Variance_of_Compensation_Leg_(Student's_T_Copu
+la).png used on input line 742.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+
+<Premium_Leg_Running_Average_(Gaussian_Copula).png, id=133, 722.7pt x 430.7292p
+t>
+File: Premium_Leg_Running_Average_(Gaussian_Copula).png Graphic file (type png)
+
+ <use Premium_Leg_Running_Average_(Gaussian_Copula).png>
+Package pdftex.def Info: Premium_Leg_Running_Average_(Gaussian_Copula).png used
+ on input line 750.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [28 <./Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png> <./Running_
+Variance_of_Compensation_Leg_(Student's_T_Copula).png>]
+<Premium_Leg_Running_Average_(Student's_T_Copula).png, id=139, 722.7pt x 430.72
+92pt>
+File: Premium_Leg_Running_Average_(Student's_T_Copula).png Graphic file (type p
+ng)
+ <use Premium_Leg_Running_Average_(Student's_T_Copula).png>
+Package pdftex.def Info: Premium_Leg_Running_Average_(Student's_T_Copula).png u
+sed on input line 758.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+
+<Running_Variance_of_Premium_Leg_(Gaussian_Copula).png, id=140, 722.7pt x 430.7
+292pt>
+File: Running_Variance_of_Premium_Leg_(Gaussian_Copula).png Graphic file (type 
+png)
+ <use Running_Variance_of_Premium_Leg_(Gaussian_Copula).png>
+Package pdftex.def Info: Running_Variance_of_Premium_Leg_(Gaussian_Copula).png 
+used on input line 766.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+ [29 <./Premium_Leg_Running_Average_(Gaussian_Copula).png> <./Premium_Leg_Runni
+ng_Average_(Student's_T_Copula).png>]
+<Running_Variance_of_Premium_Leg_(Student's_T_Copula).png, id=146, 722.7pt x 43
+0.7292pt>
+File: Running_Variance_of_Premium_Leg_(Student's_T_Copula).png Graphic file (ty
+pe png)
+ <use Running_Variance_of_Premium_Leg_(Student's_T_Copula).png>
+Package pdftex.def Info: Running_Variance_of_Premium_Leg_(Student's_T_Copula).p
+ng used on input line 774.
+(pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
+
+Overfull \hbox (56.32657pt too wide) in paragraph at lines 784--791
+ [] 
+ []
+
+[30 <./Running_Variance_of_Premium_Leg_(Gaussian_Copula).png> <./Running_Varian
+ce_of_Premium_Leg_(Student's_T_Copula).png>]
+Underfull \hbox (badness 10000) in paragraph at lines 795--796
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 797--798
+
+ []
+
+[31]
+Chapter 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--824
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--824
+
+ []
+
+[32
+
+] [33] (JosephDwonczykCQFFinalProject.aux) ) 
+Here is how much of TeX's memory you used:
+ 4644 strings out of 493323
+ 67418 string characters out of 3139045
+ 256497 words of memory out of 3000000
+ 8092 multiletter control sequences out of 15000+200000
+ 13740 words of font info for 52 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,13n,32p,1062b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmbx5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on JosephDwonczykCQFFinalProject.pdf (34 pages, 1115477 bytes).
+PDF statistics:
+ 218 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+
