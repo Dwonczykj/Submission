@@ -432,7 +432,7 @@ In order to carry out a Monte Carlo simulation, I will carry out the following p
 
 \begin{enumerate}
 \item I first need to be able to simulate defaults of the 5 reference names in the basket CDS. The joint default distribution of these reference names is not known and so I must infer the joint default distribution empirically. I will therefore fit a copula to the default data to proxy the joint default distribution of reference names.
-\item At the outset of the project, we are not sure what shape best describes the joint default distribution of the reference names. So I have chosen the Gaussian copula and the Student's T copula which are both continuous copula because they are easier to implement and there are no specific reasons why they should not fit the data. To parametrise the copulas to the underlying default data, I must: 
+\item At the outset of the project, we are not sure what shape best describes the joint default distribution of the reference names. So the Gaussian copula and the Student's T copula, which are both continuous copula, have been chosen because they are easier to implement and there are no specific reasons why they should not fit the data. To parametrise the copulas to the underlying default data, I must: 
 	\begin{enumerate}
 		\item Pull a History of CDS spreads of equal tenor (the most liquid) for each reference name.
 		\item Calculate a correlation matrix from the time series of CDS spreads.
@@ -511,11 +511,22 @@ From the market credit spreads, I calculate the following implied term structure
 	\end{center}
 \end{figure}
 
-\chapter{Copula Parametrisation}
+
+\chapter{Correlations \& Copula Parametrisation}
 
 I now estimate the correlations between the default probability of each of the reference names. As the default probability correlation between 2 reference names is not dependent on the tenor, but instead on the relationship between the 2 reference names (i.e. positions with one-another), we use the most liquid tenor at 5 years of historical credit spreads for deriving the probability of default correlations as we can compare this data for each reference name side-by-side. It is however worth noting that Credit spreads depend on other external market influences than just the default probability of a company as they are a traded instrument; therefore, credit spreads are not necessarily a perfect indicator for the default probability correlation structure between counterparties. But due to data constraints and the fact that default probabilities themselves are not directly 'tradable' (not observable); I will use credit spreads as other methods of deriving correlations are outside of the scope of this project.\\
 
-To calculate the correlation matrix, I begin by calculating log returns from the historical credit spreads for each reference name. I calculate the \textbf{weekly} returns to begin with as I believe that it the weekly returns will have significantly less noise than daily returns. Considering that there needs to be sufficient data to calculate meaningful correlations that don't change wildly based on sample size, I choose arbitrarily to use at least 100 data points to calculate correlations from; this results in historical spreads from at least 2 years back. 
+\section{Historical Sampling of Default Correlations}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Historical_Credit_Spreads_Data.png}
+		\caption{Historical Credit Spreads Data} 
+		\label{Historical_Credit_Spreads_Data}
+	\end{center}
+\end{figure}
+
+To calculate the correlation matrix, I begin by calculating log returns from the historical credit spreads for each reference name (as seen in figure \ref{Historical_Credit_Spreads_Data} above). I calculate the \textbf{weekly} returns to begin with as I believe that it the weekly returns will have significantly less noise than daily returns. Considering that there needs to be sufficient data to calculate meaningful correlations that don't change wildly based on sample size, I choose arbitrarily to use at least 100 data points to calculate correlations from; this results in historical spreads from at least 2 years back. 
 
 \begin{align*}
 rln_{ji} = Log(\psi_{ji} / \psi_{ji - l}) UPDATE TO AVERAGE
@@ -527,7 +538,7 @@ where:
 	\item $rln$ is the log return.
 \end{itemize}
 
-\section{Gaussian Copula}
+\subsection{Gaussian Copula}
 
 For the Gaussian copula, I calculate the \textbf{Linear, (Pearson)} correlation, $\mathbf{C}^{lin}$, between log returns and use this to parametrise the copula. Using linear correlation as a measure of co-dependance is only acceptable when the underlying variables are Gaussian. Therefore we will use the linear correlation to parametrise the Gaussian copula. Furthermore, for linear correlations the following hold:
 
@@ -552,20 +563,20 @@ In doing so, I am able to calculate a Pearson correlation matrix:
 	\begin{tabular}{|l|l|l|l|l|c|c|c|c|c|}
 		\hline
 		& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4}\\\hhline{|=|=|=|=|=|=|}
-		\textbf{0} & 1.0 & 0.18649886011 & 0.101372525924 & 0.115160494021 & 0.18647762541\\
-		\textbf{1} & 0.18649886011 & 1.0 & 0.114773569696 & 0.109328816372 & 0.22762339474\\
-		\textbf{2} & 0.101372525924 & 0.114773569696 & 1.0 & 0.216432755271 & 0.119391581963\\
-		\textbf{3} & 0.115160494021 & 0.109328816372 & 0.216432755271 & 1.0 & 0.11993594199\\
-		\textbf{4} & 0.18647762541 & 0.22762339474 & 0.119391581963 & 0.11993594199 & 1.0\\
+		\textbf{0} & 1.0 & 0.816648231202 & 0.494174976017 & 0.604054027376 & 0.799331842251\\
+		\textbf{1} & 0.816648231202 & 1.0 & 0.516350004433 & 0.589791041796 & 0.938783819003\\
+		\textbf{2} & 0.494174976017 & 0.516350004433 & 1.0 & 0.883763607982 & 0.509473862112\\
+		\textbf{3} & 0.604054027376 & 0.589791041796 & 0.883763607982 & 1.0 & 0.582036956658\\
+		\textbf{4} & 0.799331842251 & 0.938783819003 & 0.509473862112 & 0.582036956658 & 1.0\\
 		\hline
 	\end{tabular}
 \end{center}
 
-\section{Student's T Copula}
+\subsection{Student's T Copula}
 
 On the other hand, for the Student's t copula, the underlying variables are not Gaussian and so using the linear correlation would be unsuitable here. Instead I use the \textbf{Rank} correlation because this gives scale invariant estimates of the correlation which are more suitable for non-Gaussian random variables. Intuitively, the rank correlation measures the dependency between a big movement in one reference name's credit spread in comparison to a movement of equivalent ranking in another reference name's credit spread. I calculate \textbf{Spearman's Rho}, which is a rank correlation, by \emph{ranking} the observations in order and then scaling them to $[0,1]$ to output scale invariant estimates of the correlation. An alternative Rank correlation that can also be used is \textbf{Kendall's Tau}. As stated above, this is important for the student's t copula because the student's t distribution does not satisfy the constraints of the linear correlation above. \\
 
-To calculate the Rank correlation, I first compute the absolute differences from the historical credit spreads for each reference name. I then calculate the Empirical CDF of these differences and use it to transform the data (\textit{absolute differences}). Absolute differences are given by:
+To calculate the Rank correlation, I first compute the absolute differences from the historical credit spreads for each reference name. I then calculate the Empirical CDF of these differences and use it to transform the data (\textit{absolute differences}). This is known as \emph{Canonical Maximum Likelihood Estimation}. The absolute differences are given by:
 
 \begin{align*}
 \text{diff}_{ji} = |\psi_{ji} - \psi_{ji - l}| UPDATE TO AVERAGE
@@ -599,7 +610,35 @@ We see from the below histograms, that the transformed data is approximately uni
 	\end{center}
 \end{figure}
 
-The Rank correlation, $\mathbf{C}^{rank}$, is then calculated from the transformed differences.
+The Rank correlation, $\mathbf{C}^{rank}$, is then calculated from the transformed differences:
+
+\begin{center}
+	\begin{tabular}{|l|l|l|l|l|c|c|c|c|c|}
+		\hline
+		& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4}\\\hhline{|=|=|=|=|=|=|}
+		\textbf{0} & 1.0 & 0.749581956979 & 0.407502315046 & 0.46285660097 & 0.749496609821\\
+		\textbf{1} & 0.749581956979 & 1.0 & 0.461372496454 & 0.439417742726 & 0.914870951937\\
+		\textbf{2} & 0.407502315046 & 0.461372496454 & 1.0 & 0.870027140204 & 0.479936211549\\
+		\textbf{3} & 0.46285660097 & 0.439417742726 & 0.870027140204 & 1.0 & 0.482050228383\\
+		\textbf{4} & 0.749496609821 & 0.914870951937 & 0.479936211549 & 0.482050228383 & 1.0\\
+		\hline
+	\end{tabular}
+\end{center}
+
+I display the difference between the 2 correlation matrices below which shows that in general, the correlation matrices roughly agree as the differences are not in general large. The  largest difference appears between Deutsche Bank and RBS with a difference of -0.0498 which can be explained by the differences in the scales of the credit spreads of the 2 reference names. The Pearson correlation does not take scaling into account:
+
+\begin{center}
+	\begin{tabular}{|l|l|l|l|l|c|c|c|c|c|}
+		\hline
+		& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4}\\\hhline{|=|=|=|=|=|=|}
+		\textbf{0} & 0.0 & -0.0670662742229 & -0.0866726609714 & -0.141197426406 & -0.0498352324296\\
+		\textbf{1} & -0.0670662742229 & 0.0 & -0.0549775079796 & -0.15037329907 & -0.0239128670659\\
+		\textbf{2} & -0.0866726609714 & -0.0549775079796 & 0.0 & -0.0137364677779 & -0.0295376505625\\
+		\textbf{3} & -0.141197426406 & -0.15037329907 & -0.0137364677779 & 0.0 & -0.0999867282749\\
+		\textbf{4} & -0.0498352324296 & -0.0239128670659 & -0.0295376505625 & -0.0999867282749 & 0.0\\
+		\hline
+	\end{tabular}
+\end{center}
 
 \section{Random number generation}
 
@@ -783,7 +822,7 @@ The simulation outputs the following estimates of fair spreads for the $1^{st}$ 
 \begin{center}
 	\begin{tabular}{|l|l|l|l|l|c|c|c|c|c|}
 		\hline
-		& \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5}\\\hhline{|=|=|=|=|=|=|}
+		\textbf{} & \textbf{$1^{st}$} & \textbf{$2^{nd}$} & \textbf{$3^{rd}$} & \textbf{$4^{th}$} & \textbf{$5^{th}$}\\\hhline{|=|=|=|=|=|=|}
 		\textbf{Gaussian} & 0.101567982756 & 0.0501498757102 & 0.0274859057615 & 0.00812602603563 & 0.00146327454895\\
 		\textbf{Student's T} & 0.15864249598 & 0.0865140811474 & 0.046047608693 & 0.021924513683 & 0.00629194399778\\
 		\hline
@@ -809,10 +848,138 @@ In this section, I use the fair spread calculated above and perform another simu
 \section{Comparison of spreads by instrument}
 If one compares the $k^{th}$ to default spread with the $(k-1)^{th}$ spread, the latter should be less because there is by definition a lower probability that the $k^{th}$ reference name defaults before the maturity of the CDS. Stated explicitly, this is because the $(k-1)^{th}$ reference name must, by definition, have already defaulted. This constraint is satisfied according to resulting spreads above.
 
+\section{Model Sensitivity to Recovery Rates}
+One would expect to notice an inverse relationship between the recovery rate the fair spread of the $k^{th}$ to default basket. 
+
+I decide to try a range of Recovery rates where the recovery rate is equivalent across reference names. \\
+
+Under the Gaussian model, I observe the following relationship which confirms the expected relationship for the fair spreads:
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png}
+		\caption{Sensitivity of fair spread to recovery rate (Gaussian)} 
+		\label{Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss)}
+	\end{center}
+\end{figure}
+
+For the Student's T model, I also observe the same relationship which again confirms the expected relationship for the fair spreads: 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png}
+		\caption{Sensitivity of fair spread to recovery rate (Student's T)} 
+		\label{Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T)}
+	\end{center}
+\end{figure}
+
+\section{Model Sensitivity to Individual Reference Names}
+
+In this section, I consider how sensitive each of the k$^{th}$ to default instruments is to the spread of each individual reference name. I increase the credit spreads for one to 5 year tenors of one reference name at a time and observe the difference in the spreads for each of the k$^{th}$ to default instruments. It is assumed and expected that the fair spread for each of the instruments increases when the underlying credit spreads of one of the baskets constituents are increased.
+
+To visualise the increase in spread with respect to increasing the market observed spreads of each individual reference name, I display a barchart which shows the increase in spread for all instruments on the same bar (1$^{st}$ to 5$^{th}$ upwards) with respect to the increase in spread of a reference name.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_reference_name_CDS_spreads_(Gauss).png}
+		\caption{Sensitivity of fair spread to Credit Spread Deltas (Gauss)} 
+		\label{Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_reference_name_CDS_spreads._(Gauss)}
+	\end{center}
+\end{figure}
 
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_name_CDS_spreads_(T).png}
+		\caption{Sensitivity of fair spread to Credit Spread Deltas (Student's T)} 
+		\label{Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_name_CDS_spreads._(T)}
+	\end{center}
+\end{figure}
+
+From both barcharts, I observe the following:
+\begin{enumerate}
+	\item Hi
+\end{enumerate}
 
 
+\section{Model Sensitivity to Default Correlations}
+
+In this section, I force arbitrary changes / values on the default correlations for both:
+\begin{itemize}
+	\item Individual pairwise default dependencies between reference names.
+	\item All the reference names in the basket together. 
+\end{itemize}
+
+Below, I observe the sensitivity of the fair spreads to the Correlation matrix and therefore the generated copulas.
+
+\subsection{Gaussian Copula}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png}
+		\caption{Sensitivity of fair spread to tweaking Correlation for (Barc,JPM), (DB,RBS) \& (JPM,GS) by 0.1} 
+		\label{Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_JPMorgan_&_Goldman_Sachs_by_0.1_(Gaussian)}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png}
+		\caption{Sensitivity of fair spread to tweaking Correlation for (Barc,JPM) by 0.1} 
+		\label{Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0.1_(Gaussian)}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png}
+		\caption{Sensitivity of fair spread to tweaking Correlation for (JPM,RBS) by 0.1} 
+		\label{Tweaked_Correlation_between_JPMorgan_&_RBS_by_0.1_(Gaussian)}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussian).png}
+		\caption{Sensitivity of fair spread to tweaking Correlation for (DB,GS) by -0.1} 
+		\label{Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0.1_(Gaussian)}
+	\end{center}
+\end{figure}
+
+
+\subsection{Student's T Copula}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png}
+		\caption{Sensitivity of fair spread to tweaking Correlation for (Barc,JPM), (DB,RBS) \& (JPM,GS) by 0.1} 
+		\label{Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_JPMorgan_&_Goldman_Sachs_by_0.1_(Students_T)}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png}
+		\caption{Sensitivity of fair spread to tweaking Correlation for (Barc,JPM) by 0.1} 
+		\label{Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0.1_(Students_T)}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png}
+		\caption{Sensitivity of fair spread to tweaking Correlation for (JPM,RBS) by 0.1} 
+		\label{Tweaked_Correlation_between_JPMorgan_&_RBS_by_0.1_(Students_T)}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Students_T)}
+		\caption{Sensitivity of fair spread to tweaking Correlation for (DB,GS) by -0.1} 
+		\label{Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0.1_(Students_T)}
+	\end{center}
+\end{figure}
 
 \subsection*{Conclusion}
 
