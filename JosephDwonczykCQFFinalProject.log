@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.1)  18 APR 2018 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.1)  19 APR 2018 07:56
 entering extended mode
 **./JosephDwonczykCQFFinalProject.tex
 (JosephDwonczykCQFFinalProject.tex
@@ -205,23 +205,136 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box32
 \enitdp@description=\count113
 )
-\c@thm=\count114
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen127
+\Hy@linkcounter=\count114
+\Hy@pagecounter=\count115
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count116
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4498.
+Package hyperref Info: Link nesting OFF on input line 4503.
+Package hyperref Info: Hyper index ON on input line 4506.
+Package hyperref Info: Plain pages OFF on input line 4513.
+Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4751.
+\c@Hy@tempcnt=\count117
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5104.
+\XeTeXLinkMargin=\dimen128
+\Fld@menulength=\count118
+\Field@Width=\dimen129
+\Fld@charsize=\dimen130
+Package hyperref Info: Hyper figures OFF on input line 6358.
+Package hyperref Info: Link nesting OFF on input line 6363.
+Package hyperref Info: Hyper index ON on input line 6366.
+Package hyperref Info: backreferencing OFF on input line 6373.
+Package hyperref Info: Link coloring OFF on input line 6378.
+Package hyperref Info: Link coloring with OCG OFF on input line 6383.
+Package hyperref Info: PDF/A mode OFF on input line 6388.
+LaTeX Info: Redefining \ref on input line 6428.
+LaTeX Info: Redefining \pageref on input line 6432.
+\Hy@abspage=\count119
+\c@Item=\count120
+\c@Hfootnote=\count121
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count122
+\c@bookmark@seq@number=\count123
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip50
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 9.
+\c@thm=\count124
 
 (JosephDwonczykCQFFinalProject.aux)
 \openout1 = `JosephDwonczykCQFFinalProject.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -259,52 +372,23 @@ LaTeX Font Info:    ... okay on input line 16.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
-\scratchdimen=\dimen127
+\scratchcounter=\count125
+\scratchdimen=\dimen131
 \scratchbox=\box33
-\nofMPsegments=\count116
-\nofMParguments=\count117
+\nofMPsegments=\count126
+\nofMParguments=\count127
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count118
-\MPscratchDim=\dimen128
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen132
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
 \everyMPtoPDFconversion=\toks32
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
@@ -312,19 +396,53 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count121
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+\c@lstlisting=\count131
+\AtBeginShipoutBox=\box34
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+Package hyperref Info: Link coloring ON on input line 22.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count132
+)
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
+
+(JosephDwonczykCQFFinalProject.out) (JosephDwonczykCQFFinalProject.out)
+\@outlinefile=\write3
+\openout3 = `JosephDwonczykCQFFinalProject.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [1
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]pdfTeX warning (ext4): des
+tination with the same identifier (name{page.1}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.29 \part{CVA Valuation}
+                          [1
 
 ]
 Chapter 1.
@@ -332,30 +450,30 @@ Chapter 1.
 
 ]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
  [3
 
 ]
 Chapter 3.
 
-Overfull \hbox (2116.37256pt too wide) in paragraph at lines 93--124
+Overfull \hbox (2116.37256pt too wide) in paragraph at lines 99--130
  [] 
  []
 
 [4
 
 ]
-Overfull \hbox (1655.05318pt too wide) in paragraph at lines 128--134
+Overfull \hbox (1655.05318pt too wide) in paragraph at lines 134--140
  [] 
  []
 
 
-Overfull \hbox (2025.81696pt too wide) in paragraph at lines 141--172
+Overfull \hbox (2025.81696pt too wide) in paragraph at lines 147--178
  [] 
  []
 
@@ -364,7 +482,7 @@ Chapter 4.
 [7
 
 ]
-Overfull \hbox (421.25076pt too wide) in paragraph at lines 234--240
+Overfull \hbox (421.25076pt too wide) in paragraph at lines 240--246
  [] 
  []
 
@@ -373,323 +491,331 @@ Overfull \hbox (421.25076pt too wide) in paragraph at lines 234--240
 ]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
 [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
 [12] [13] [14]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
 
  []
 
-<Sonia_Discount_Curve.png, id=67, 722.7pt x 430.7292pt>
+<Sonia_Discount_Curve.png, id=262, 722.7pt x 430.7292pt>
 File: Sonia_Discount_Curve.png Graphic file (type png)
 
 <use Sonia_Discount_Curve.png>
-Package pdftex.def Info: Sonia_Discount_Curve.png used on input line 473.
+Package pdftex.def Info: Sonia_Discount_Curve.png used on input line 479.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [15
 
  <./Sonia_Discount_Curve.png>]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--503
+Underfull \hbox (badness 10000) in paragraph at lines 507--509
 
  []
 
-<Hazard_Rates.png, id=73, 722.7pt x 430.7292pt>
+<Hazard_Rates.png, id=270, 722.7pt x 430.7292pt>
 File: Hazard_Rates.png Graphic file (type png)
  <use Hazard_Rates.png>
-Package pdftex.def Info: Hazard_Rates.png used on input line 508.
+Package pdftex.def Info: Hazard_Rates.png used on input line 514.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [16
 
-]
-[17 <./Hazard_Rates.png>]
+[16
+
+] [17 <./Hazard_Rates.png>]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
 
  []
 
-<Historical_Credit_Spreads_Data.png, id=81, 722.7pt x 430.7292pt>
+<Historical_Credit_Spreads_Data.png, id=281, 722.7pt x 430.7292pt>
 File: Historical_Credit_Spreads_Data.png Graphic file (type png)
 
 <use Historical_Credit_Spreads_Data.png>
 Package pdftex.def Info: Historical_Credit_Spreads_Data.png used on input line 
-523.
+529.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [18
 
 ]
-<Weekly_log_returns.png, id=86, 722.7pt x 430.7292pt>
+<Weekly_log_returns.png, id=288, 722.7pt x 430.7292pt>
 File: Weekly_log_returns.png Graphic file (type png)
 
 <use Weekly_log_returns.png>
-Package pdftex.def Info: Weekly_log_returns.png used on input line 554.
+Package pdftex.def Info: Weekly_log_returns.png used on input line 560.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [19 <./Historical_Credit_Spreads_Data.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 577--578
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--585
+Underfull \hbox (badness 10000) in paragraph at lines 589--591
 
  []
 
 [20 <./Weekly_log_returns.png>]
-<Weekly_absolute_diffs.png, id=95, 722.7pt x 430.7292pt>
+<Weekly_absolute_diffs.png, id=301, 722.7pt x 430.7292pt>
 File: Weekly_absolute_diffs.png Graphic file (type png)
 
 <use Weekly_absolute_diffs.png>
-Package pdftex.def Info: Weekly_absolute_diffs.png used on input line 590.
+Package pdftex.def Info: Weekly_absolute_diffs.png used on input line 596.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 600--602
+Underfull \hbox (badness 10000) in paragraph at lines 606--608
 
  []
 
-<Inverse_ECDF_Rank.png, id=96, 722.7pt x 430.7292pt>
+<Inverse_ECDF_Rank.png, id=302, 722.7pt x 430.7292pt>
 File: Inverse_ECDF_Rank.png Graphic file (type png)
 
 <use Inverse_ECDF_Rank.png>
-Package pdftex.def Info: Inverse_ECDF_Rank.png used on input line 607.
+Package pdftex.def Info: Inverse_ECDF_Rank.png used on input line 613.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [21 <./Weekly_absolute_diffs.png>]
-Overfull \hbox (14.72821pt too wide) in paragraph at lines 631--641
+Overfull \hbox (14.72821pt too wide) in paragraph at lines 637--647
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--652
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
 
  []
 
 [22 <./Inverse_ECDF_Rank.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+Underfull \hbox (badness 10000) in paragraph at lines 660--661
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--663
+Underfull \hbox (badness 10000) in paragraph at lines 668--669
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--689
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 712--713
 
  []
 
 [24]
 Chapter 9.
-<Gaussian_Copula_1_vs_Gaussian_Copula_2.png, id=112, 722.7pt x 430.7292pt>
+<Gaussian_Copula_1_vs_Gaussian_Copula_2.png, id=334, 722.7pt x 430.7292pt>
 File: Gaussian_Copula_1_vs_Gaussian_Copula_2.png Graphic file (type png)
 
 <use Gaussian_Copula_1_vs_Gaussian_Copula_2.png>
 Package pdftex.def Info: Gaussian_Copula_1_vs_Gaussian_Copula_2.png used on inp
-ut line 720.
+ut line 726.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Gaussian_Copula_1.png, id=113, 722.7pt x 430.7292pt>
+<copulademo_08.png, id=337, 562.1pt x 421.575pt>
+File: copulademo_08.png Graphic file (type png)
+ <use copulademo_08.png>
+Package pdftex.def Info: copulademo_08.png used on input line 736.
+(pdftex.def)             Requested size: 426.79134pt x 320.09155pt.
+
+[25
+
+ <./Gaussian_Copula_1_vs_Gaussian_Copula_2.png>]
+<Gaussian_Copula_1.png, id=346, 722.7pt x 430.7292pt>
 File: Gaussian_Copula_1.png Graphic file (type png)
 
 <use Gaussian_Copula_1.png>
-Package pdftex.def Info: Gaussian_Copula_1.png used on input line 728.
+Package pdftex.def Info: Gaussian_Copula_1.png used on input line 744.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [25
 
- <./Gaussian_Copula_1_vs_Gaussian_Copula_2.png>] <T_Copula_3_vs_T_Copula_4.png,
- id=118, 722.7pt x 430.7292pt>
+<T_Copula_3_vs_T_Copula_4.png, id=347, 722.7pt x 430.7292pt>
 File: T_Copula_3_vs_T_Copula_4.png Graphic file (type png)
 
 <use T_Copula_3_vs_T_Copula_4.png>
-Package pdftex.def Info: T_Copula_3_vs_T_Copula_4.png used on input line 736.
+Package pdftex.def Info: T_Copula_3_vs_T_Copula_4.png used on input line 752.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
-
-<T_Copula_3.png, id=119, 722.7pt x 430.7292pt>
+ [26 <./copulademo_08.png (PNG copy)> <./Gaussian_Copula_1.png>] <T_Copula_3.pn
+g, id=354, 722.7pt x 430.7292pt>
 File: T_Copula_3.png Graphic file (type png)
- <use T_Copula_3.png>
-Package pdftex.def Info: T_Copula_3.png used on input line 744.
+
+<use T_Copula_3.png>
+Package pdftex.def Info: T_Copula_3.png used on input line 760.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [26 <./Gaussian_Copula_1.png> <./T_Copula_3_vs_T_Copula_4.png>]
-<Compensation_Leg_Running_Average_(Gaussian_Copula).png, id=125, 722.7pt x 430.
+ [27 <./T_Copula_3_vs_T_Copula_4.png> <./T_Copula_3.png>]
+<Compensation_Leg_Running_Average_(Gaussian_Copula).png, id=363, 722.7pt x 430.
 7292pt>
 File: Compensation_Leg_Running_Average_(Gaussian_Copula).png Graphic file (type
  png)
  <use Compensation_Leg_Running_Average_(Gaussian_Copula).png>
 Package pdftex.def Info: Compensation_Leg_Running_Average_(Gaussian_Copula).png
- used on input line 757.
+ used on input line 773.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [27 <./T_Copula_3.png>]
-<Compensation_Leg_Running_Average_(Student's_T_Copula).png, id=130, 722.7pt x 4
+
+<Compensation_Leg_Running_Average_(Student's_T_Copula).png, id=364, 722.7pt x 4
 30.7292pt>
 File: Compensation_Leg_Running_Average_(Student's_T_Copula).png Graphic file (t
 ype png)
  <use Compensation_Leg_Running_Average_(Student's_T_Copula).png>
 Package pdftex.def Info: Compensation_Leg_Running_Average_(Student's_T_Copula).
-png used on input line 765.
+png used on input line 781.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png, id=131, 722.7pt x 
+<Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png, id=365, 722.7pt x 
 430.7292pt>
 File: Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png Graphic file (
 type png)
  <use Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png>
 Package pdftex.def Info: Running_Variance_of_Compensation_Leg_(Gaussian_Copula)
-.png used on input line 773.
+.png used on input line 789.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
 [28 <./Compensation_Leg_Running_Average_(Gaussian_Copula).png> <./Compensation_
 Leg_Running_Average_(Student's_T_Copula).png>]
-<Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png, id=137, 722.7pt
+<Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png, id=374, 722.7pt
  x 430.7292pt>
 File: Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png Graphic fil
 e (type png)
 
 <use Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png>
 Package pdftex.def Info: Running_Variance_of_Compensation_Leg_(Student's_T_Copu
-la).png used on input line 781.
+la).png used on input line 797.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Premium_Leg_Running_Average_(Gaussian_Copula).png, id=138, 722.7pt x 430.7292p
+<Premium_Leg_Running_Average_(Gaussian_Copula).png, id=375, 722.7pt x 430.7292p
 t>
 File: Premium_Leg_Running_Average_(Gaussian_Copula).png Graphic file (type png)
 
  <use Premium_Leg_Running_Average_(Gaussian_Copula).png>
 Package pdftex.def Info: Premium_Leg_Running_Average_(Gaussian_Copula).png used
- on input line 789.
+ on input line 805.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [29 <./Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png> <./Running_
 Variance_of_Compensation_Leg_(Student's_T_Copula).png>]
-<Premium_Leg_Running_Average_(Student's_T_Copula).png, id=144, 722.7pt x 430.72
+<Premium_Leg_Running_Average_(Student's_T_Copula).png, id=384, 722.7pt x 430.72
 92pt>
 File: Premium_Leg_Running_Average_(Student's_T_Copula).png Graphic file (type p
 ng)
  <use Premium_Leg_Running_Average_(Student's_T_Copula).png>
 Package pdftex.def Info: Premium_Leg_Running_Average_(Student's_T_Copula).png u
-sed on input line 797.
+sed on input line 813.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Running_Variance_of_Premium_Leg_(Gaussian_Copula).png, id=145, 722.7pt x 430.7
+<Running_Variance_of_Premium_Leg_(Gaussian_Copula).png, id=385, 722.7pt x 430.7
 292pt>
 File: Running_Variance_of_Premium_Leg_(Gaussian_Copula).png Graphic file (type 
 png)
  <use Running_Variance_of_Premium_Leg_(Gaussian_Copula).png>
 Package pdftex.def Info: Running_Variance_of_Premium_Leg_(Gaussian_Copula).png 
-used on input line 805.
+used on input line 821.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [30 <./Premium_Leg_Running_Average_(Gaussian_Copula).png> <./Premium_Leg_Runni
 ng_Average_(Student's_T_Copula).png>]
-<Running_Variance_of_Premium_Leg_(Student's_T_Copula).png, id=152, 722.7pt x 43
+<Running_Variance_of_Premium_Leg_(Student's_T_Copula).png, id=395, 722.7pt x 43
 0.7292pt>
 File: Running_Variance_of_Premium_Leg_(Student's_T_Copula).png Graphic file (ty
 pe png)
  <use Running_Variance_of_Premium_Leg_(Student's_T_Copula).png>
 Package pdftex.def Info: Running_Variance_of_Premium_Leg_(Student's_T_Copula).p
-ng used on input line 813.
+ng used on input line 829.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-Overfull \hbox (56.32657pt too wide) in paragraph at lines 823--830
+Overfull \hbox (56.32657pt too wide) in paragraph at lines 839--846
  [] 
  []
 
 [31 <./Running_Variance_of_Premium_Leg_(Gaussian_Copula).png> <./Running_Varian
 ce_of_Premium_Leg_(Student's_T_Copula).png>]
-Underfull \hbox (badness 10000) in paragraph at lines 834--835
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--837
+Underfull \hbox (badness 10000) in paragraph at lines 852--853
 
  []
 
 [32]
 Chapter 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 854--855
+Underfull \hbox (badness 10000) in paragraph at lines 870--871
 
  []
 
 
-<Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png, id=161, 722.7
+<Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png, id=410, 722.7
 pt x 430.7292pt>
 File: Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png Graphic f
 ile (type png)
 
 <use Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png>
 Package pdftex.def Info: Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(G
-auss).png used on input line 860.
+auss).png used on input line 876.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [33
 
 ]
-<Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png, id=165, 722.7pt x
+<Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png, id=415, 722.7pt x
  430.7292pt>
 File: Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png Graphic file 
 (type png)
  <use Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png>
 Package pdftex.def Info: Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T
-).png used on input line 870.
+).png used on input line 886.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
 [34 <./Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png> <./Sens
 itivity_of_FairSpread_to_changing_Recovery_Rate_(T).png>]
 <Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_reference_name_
-CDS_spreads_(Gauss).png, id=171, 722.7pt x 430.7292pt>
+CDS_spreads_(Gauss).png, id=424, 722.7pt x 430.7292pt>
 File: Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_reference_
 name_CDS_spreads_(Gauss).png Graphic file (type png)
 
 <use Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_reference_n
 ame_CDS_spreads_(Gauss).png>
 Package pdftex.def Info: Sensitivity_of_fair_spread_to_a_150_bps_increase_in_in
-dividual_reference_name_CDS_spreads_(Gauss).png used on input line 884.
+dividual_reference_name_CDS_spreads_(Gauss).png used on input line 900.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
 <Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_name_CD
-S_spreads_(T).png, id=172, 722.7pt x 430.7292pt>
+S_spreads_(T).png, id=425, 722.7pt x 430.7292pt>
 File: Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_na
 me_CDS_spreads_(T).png Graphic file (type png)
 
 <use Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_nam
 e_CDS_spreads_(T).png>
 Package pdftex.def Info: Sensitivity_of_fair_spread_to_150_bps_increase_in_indi
-vidual_reference_name_CDS_spreads_(T).png used on input line 893.
+vidual_reference_name_CDS_spreads_(T).png used on input line 909.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [35 <./Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_referenc
 e_name_CDS_spreads_(Gauss).png>]
 <Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_JPMor
-gan_&_Goldman_Sachs_by_0,1_(Gaussian).png, id=177, 722.7pt x 430.7292pt>
+gan_&_Goldman_Sachs_by_0,1_(Gaussian).png, id=432, 722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_
 JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png Graphic file (type png)
 
@@ -697,45 +823,45 @@ JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png Graphic file (type png)
 PMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deuts
 che_Bank_&_RBS_and_JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png used on input
- line 919.
+ line 935.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [36 <./Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_
 name_CDS_spreads_(T).png>]
-<Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png, id=183,
+<Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png, id=441,
  722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png Gra
 phic file (type png)
 
 <use Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1
-_(Gaussian).png used on input line 927.
+_(Gaussian).png used on input line 943.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png, id=184, 722.
+<Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png, id=442, 722.
 7pt x 427.8384pt>
 File: Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png Graphic 
 file (type png)
 
 <use Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png>
 Package pdftex.def Info: Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gau
-ssian).png used on input line 935.
+ssian).png used on input line 951.
 (pdftex.def)             Requested size: 426.79134pt x 252.664pt.
  [37 <./Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_an
 d_JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png> <./Tweaked_Correlation_betwee
 n_Barclays_&_JPMorgan_by_0,1_(Gaussian).png>]
 <Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussian).p
-ng, id=190, 722.7pt x 430.7292pt>
+ng, id=451, 722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussi
 an).png Graphic file (type png)
 
 <use Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussia
 n).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sa
-chs_by_-0,1_(Gaussian).png used on input line 943.
+chs_by_-0,1_(Gaussian).png used on input line 959.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
 <Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_JPMor
-gan_&_Goldman_Sachs_by_0,1_(Students_T).png, id=191, 722.7pt x 430.7292pt>
+gan_&_Goldman_Sachs_by_0,1_(Students_T).png, id=452, 722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_
 JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png Graphic file (type png)
 
@@ -743,85 +869,97 @@ JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png Graphic file (type png)
 PMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deuts
 che_Bank_&_RBS_and_JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png used on inp
-ut line 954.
+ut line 970.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [38 <./Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png> <./Tw
 eaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussian).png>
 ]
-<Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png, id=19
-7, 722.7pt x 430.7292pt>
+<Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png, id=46
+1, 722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png G
 raphic file (type png)
 
 <use Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1
-_(Students_T).png used on input line 962.
+_(Students_T).png used on input line 978.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png, id=198, 72
+<Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png, id=462, 72
 2.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png Graphi
 c file (type png)
 
 <use Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png>
 Package pdftex.def Info: Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Stu
-dents_T).png used on input line 970.
+dents_T).png used on input line 986.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
 [39 <./Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and
 _JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png> <./Tweaked_Correlation_betwe
 en_Barclays_&_JPMorgan_by_0,1_(Students_T).png>]
 <Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Students_T)
-.png, id=204, 722.7pt x 427.8384pt>
+.png, id=471, 722.7pt x 427.8384pt>
 File: Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Studen
 ts_T).png Graphic file (type png)
 
 <use Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Student
 s_T).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sa
-chs_by_-0,1_(Students_T).png used on input line 978.
+chs_by_-0,1_(Students_T).png used on input line 994.
 (pdftex.def)             Requested size: 426.79134pt x 252.664pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 986--991
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1007
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 986--991
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1007
 
  []
 
 [40 <./Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png> <./T
 weaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Students_T).p
-ng>] [41] (JosephDwonczykCQFFinalProject.aux) ) 
+ng>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1018.
+ [41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1018.
+ (JosephDwonczykCQFFinalProject.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1018.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1018.
+
+Package rerunfilecheck Info: File `JosephDwonczykCQFFinalProject.out' has not c
+hanged.
+(rerunfilecheck)             Checksum: F121588E72679AA946E91131782E8A2A;2816.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1018.
+ ) 
 Here is how much of TeX's memory you used:
- 4722 strings out of 493323
- 73785 string characters out of 3139045
- 256655 words of memory out of 3000000
- 8157 multiletter control sequences out of 15000+200000
+ 8448 strings out of 493323
+ 129704 string characters out of 3139045
+ 337098 words of memory out of 3000000
+ 11706 multiletter control sequences out of 15000+200000
  13740 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,32p,1062b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on JosephDwonczykCQFFinalProject.pdf (42 pages, 1761834 bytes).
+ 28i,13n,32p,1062b,553s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
+.pfb>
+Output written on JosephDwonczykCQFFinalProject.pdf (42 pages, 1814395 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 577 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
+ 460 words of extra memory for PDF output out of 10000 (max. 10000000)
 

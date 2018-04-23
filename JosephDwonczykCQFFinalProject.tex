@@ -1,6 +1,12 @@
 \documentclass{report}
 \usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry} % page settings
-\usepackage{amsmath,amssymb,amsthm,float,graphicx,hhline,listings,enumitem} % provides many mathematical environments & tools
+\usepackage{amsmath,amssymb,amsthm,float,graphicx,hhline,listings,enumitem,hyperref} % provides many mathematical environments & tools
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
 
 \setlength{\parindent}{0mm}
 
@@ -576,7 +582,7 @@ In doing so, I am able to calculate a Pearson correlation matrix:
 
 On the other hand, for the Student's t copula, the underlying variables are not Gaussian and so using the linear correlation would be unsuitable here. Instead I use the \textbf{Rank} correlation because this gives scale invariant estimates of the correlation which are more suitable for non-Gaussian random variables. Intuitively, the rank correlation measures the dependency between a big movement in one reference name's credit spread in comparison to a movement of equivalent ranking in another reference name's credit spread. I calculate \textbf{Spearman's Rho}, which is a rank correlation, by \emph{ranking} the observations in order and then scaling them to $[0,1]$ to output scale invariant estimates of the correlation. An alternative Rank correlation that can also be used is \textbf{Kendall's Tau}. As stated above, this is important for the student's t copula because the student's t distribution does not satisfy the constraints of the linear correlation above. \\
 
-To calculate the Rank correlation, I first compute the absolute differences from the historical credit spreads for each reference name. I then calculate the Empirical CDF of these differences and use it to transform the data (\textit{absolute differences}). This is known as \emph{Canonical Maximum Likelihood Estimation}. The absolute differences are given by:
+To calculate the Rank correlation, I first compute the absolute differences from the historical credit spreads for each reference name which are near-Gaussian distributed. I then calculate the Empirical CDF of these differences and use it to transform the data (\textit{absolute differences}). This is known as \emph{Canonical Maximum Likelihood Estimation}. The downside of this non-parametric method is that the Uniform samples obtained from the transformed data may not be sufficiently uniform which leads to gaps in the resulting copula (joint distribution of defaults). The absolute differences are given by:
 
 \begin{align*}
 \text{diff}_{ji} = |\psi_{ji} - \psi_{ji - l}| UPDATE TO AVERAGE
@@ -722,6 +728,18 @@ Having computed default probabilities and discount factors, I first parametrise 
 		\label{Gaussian_Copula_1_vs_Gaussian_Copula_2}
 	\end{center}
 \end{figure}
+
+I expect that the relationship between $U_1$ (The transformed Uniform R.V.s from the Deutsche Bank credit spread returns) and $U_2$ (Barclays) should resemble the pattern of an elliptical copula density to confirm that elliptical Copulas satisfy the dependence structure of the transformed historical data. Figure \ref{copulademo_08} is taken from  \href{http://www.mbfys.ru.nl/~robvdw/CNP04/LAB_ASSIGMENTS/LAB05_CN05/MATLAB2007b/stats/html/copulademo.html}{mbfys} to show a classic scatter of the marginals of an elliptical copula so that one can compare the two plots.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{copulademo_08.png}
+		\caption{Joint Distribution of 1st and 2nd marginals from Elliptical Copula. \newline Taken from \href{http://www.mbfys.ru.nl/~robvdw/CNP04/LAB_ASSIGMENTS/LAB05_CN05/MATLAB2007b/stats/html/copulademo.html}{here}.} 
+		\label{copulademo_08}
+	\end{center}
+\end{figure}
+
+I note that Figure \ref{Gaussian_Copula_1_vs_Gaussian_Copula_2} differs from Figure \ref{copulademo_08} in its tails. So Extreme Value Theory (EVT) can be applied here to tackle this data structure issue.
 
 \begin{figure}[H]
 	\begin{center}
