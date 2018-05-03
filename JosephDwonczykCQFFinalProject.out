@@ -24,15 +24,18 @@
 \BOOKMARK [2][-]{subsection.8.3.1}{Gray code integer encoding}{section.8.3}% 24
 \BOOKMARK [2][-]{subsection.8.3.2}{Initialisation}{section.8.3}% 25
 \BOOKMARK [1][-]{section.8.4}{Extreme Value Theory}{chapter.8}% 26
-\BOOKMARK [0][-]{chapter.9}{Simulation \046 Observations}{part.2}% 27
-\BOOKMARK [1][-]{section.9.1}{Estimation of Fair Spread by simulation}{chapter.9}% 28
-\BOOKMARK [2][-]{subsection.9.1.1}{Reference name co-dependencies}{section.9.1}% 29
-\BOOKMARK [2][-]{subsection.9.1.2}{Monte-Carlo Observations}{section.9.1}% 30
-\BOOKMARK [0][-]{chapter.10}{Model Validation}{part.2}% 31
-\BOOKMARK [1][-]{section.10.1}{Re-Pricing with Fair Spread to compare Premiums and Compensation}{chapter.10}% 32
-\BOOKMARK [1][-]{section.10.2}{Comparison of spreads by instrument}{chapter.10}% 33
-\BOOKMARK [1][-]{section.10.3}{Model Sensitivity to Recovery Rates}{chapter.10}% 34
-\BOOKMARK [1][-]{section.10.4}{Model Sensitivity to Individual Reference Names}{chapter.10}% 35
-\BOOKMARK [1][-]{section.10.5}{Model Sensitivity to Default Correlations}{chapter.10}% 36
-\BOOKMARK [2][-]{subsection.10.5.1}{Gaussian Copula}{section.10.5}% 37
-\BOOKMARK [2][-]{subsection.10.5.2}{Student's T Copula}{section.10.5}% 38
+\BOOKMARK [2][-]{subsection.8.4.1}{Kernel Smoothing}{section.8.4}% 27
+\BOOKMARK [2][-]{subsection.8.4.2}{Generalised Pareto Distribution}{section.8.4}% 28
+\BOOKMARK [2][-]{subsection.8.4.3}{Semi-parametric fitting}{section.8.4}% 29
+\BOOKMARK [0][-]{chapter.9}{Simulation \046 Observations}{part.2}% 30
+\BOOKMARK [1][-]{section.9.1}{Estimation of Fair Spread by simulation}{chapter.9}% 31
+\BOOKMARK [2][-]{subsection.9.1.1}{Reference name co-dependencies}{section.9.1}% 32
+\BOOKMARK [2][-]{subsection.9.1.2}{Monte-Carlo Observations}{section.9.1}% 33
+\BOOKMARK [0][-]{chapter.10}{Model Validation}{part.2}% 34
+\BOOKMARK [1][-]{section.10.1}{Re-Pricing with Fair Spread to compare Premiums and Compensation}{chapter.10}% 35
+\BOOKMARK [1][-]{section.10.2}{Comparison of spreads by instrument}{chapter.10}% 36
+\BOOKMARK [1][-]{section.10.3}{Model Sensitivity to Recovery Rates}{chapter.10}% 37
+\BOOKMARK [1][-]{section.10.4}{Model Sensitivity to Individual Reference Names}{chapter.10}% 38
+\BOOKMARK [1][-]{section.10.5}{Model Sensitivity to Default Correlations}{chapter.10}% 39
+\BOOKMARK [2][-]{subsection.10.5.1}{Gaussian Copula}{section.10.5}% 40
+\BOOKMARK [2][-]{subsection.10.5.2}{Student's T Copula}{section.10.5}% 41
