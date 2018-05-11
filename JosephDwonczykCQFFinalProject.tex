@@ -522,7 +522,7 @@ From the market credit spreads, I calculate the following implied term structure
 
 I now estimate the correlations between the default probability of each of the reference names. As the default probability correlation between 2 reference names is not dependent on the tenor, but instead on the relationship between the 2 reference names (i.e. positions with one-another), we use the most liquid tenor at 5 years of historical credit spreads for deriving the probability of default correlations as we can compare this data for each reference name side-by-side. It is however worth noting that Credit spreads depend on other external market influences than just the default probability of a company as they are a traded instrument; therefore, credit spreads are not necessarily a perfect indicator for the default probability correlation structure between counterparties. But due to data constraints and the fact that default probabilities themselves are not directly 'tradable' (not observable); I will use credit spreads as other methods of deriving correlations are outside of the scope of this project.\\
 
-\section{Historical Sampling of Default Correlations}
+\section{Default Correlations (Canonical Maximum Likelihood}
 
 \begin{figure}[H]
 	\begin{center}
@@ -532,10 +532,10 @@ I now estimate the correlations between the default probability of each of the r
 	\end{center}
 \end{figure}
 
-To calculate the correlation matrix, I begin by calculating log returns from the historical credit spreads for each reference name (as seen in figure \ref{Historical_Credit_Spreads_Data} above). I calculate the \textbf{weekly} returns to begin with as I believe that it the weekly returns will have significantly less noise than daily returns. Considering that there needs to be sufficient data to calculate meaningful correlations that don't change wildly based on sample size, I choose arbitrarily to use at least 100 data points to calculate correlations from; this results in historical spreads from at least 2 years back. 
+To calculate the correlation matrix, I begin by calculating log returns from the historical credit spreads for each reference name (as seen in figure \ref{Historical_Credit_Spreads_Data} above). I calculate the \textbf{weekly} returns to begin with as I believe that the weekly returns will have significantly less noise than daily returns. Considering that there needs to be sufficient data to calculate meaningful correlations that don't change wildly based on sample size, I choose arbitrarily to use at least 100 data points to calculate correlations from; this results in historical spreads from at least 2 years back. 
 
 \begin{align*}
-rln_{ji} = Log(\psi_{ji} / \psi_{ji - l}) UPDATE TO AVERAGE
+rln_{ji} = Log(\psi_{ji} / \psi_{ji - l}) \text{ UPDATE TO AVERAGE FROM CODE}
 \end{align*}
 where:
 \begin{itemize}
@@ -544,7 +544,7 @@ where:
 	\item $rln$ is the log return.
 \end{itemize}
 
-\subsection{Gaussian Copula}
+\subsection{Pearson Correlation}
 
 For the Gaussian copula, I calculate the \textbf{Linear, (Pearson)} correlation, $\mathbf{C}^{lin}$, between log returns and use this to parametrise the copula. Using linear correlation as a measure of co-dependance is only acceptable when the underlying variables are Gaussian. Therefore we will use the linear correlation to parametrise the Gaussian copula. Furthermore, for linear correlations the following hold:
 
@@ -578,7 +578,7 @@ In doing so, I am able to calculate a Pearson correlation matrix:
 	\end{tabular}
 \end{center}
 
-\subsection{Student's T Copula}
+\subsection{Rank Correlation}
 
 On the other hand, for the Student's t copula, the underlying variables are not Gaussian and so using the linear correlation would be unsuitable here. Instead I use the \textbf{Rank} correlation because this gives scale invariant estimates of the correlation which are more suitable for non-Gaussian random variables. Intuitively, the rank correlation measures the dependency between a big movement in one reference name's credit spread in comparison to a movement of equivalent ranking in another reference name's credit spread. I calculate \textbf{Spearman's Rho}, which is a rank correlation, by \emph{ranking} the observations in order and then scaling them to $[0,1]$ to output scale invariant estimates of the correlation. An alternative Rank correlation that can also be used is \textbf{Kendall's Tau}. As stated above, this is important for the student's t copula because the student's t distribution does not satisfy the constraints of the linear correlation above. \\
 
@@ -646,6 +646,164 @@ I display the difference between the 2 correlation matrices below which shows th
 	\end{tabular}
 \end{center}
 
+\section{Extreme Value Theory}
+
+It is often the case that financial data is not well represented in the tails of a Gaussian distributions. To solve this shortcoming, one can employ Extreme Value Theory (EVT). EVT is a statistical tool to deal with extreme deviations from a distribution's median. In general, EVT is used to characterise the distribution of a sample maximum of a distribution values above a certain threshold (tail(s)).\\ 
+%Paper: Modeling TAil Behaviour with Extreme Value Theory by Damon Levine from Risk Management Journal.
+Here we use a Generalised Pareto Distribution (GPD) to model the tail(s). The Picklands-Balkema-de Haan Theorem, stated below, supports this choice.\\ 
+When employing Extreme value theory to model the tails, I apply a semi-parametric fit to the centre of the data sample using Kernel Smoothing which is a parametric alternative to a histogram.\\
+
+\subsection{Kernel Smoothing}
+
+% Add https://mglerner.github.io/posts/histograms-and-kernel-density-estimation-kde-2.html?p=28 to references.
+Kernel smoothing is a parametric method of density estimation. Like a histogram (non-parametric density estimation), kernel smoothing looks to create a distribution for the data based on which section (bin) of the data each sampling unit fits within. The difference between the two is that a histogram:
+\begin{itemize}
+	\item predefines discrete bins for this data which heavily influences the observed distribution of the data.
+	\item is \emph{very} dependent on the choice of boundaries for each bin.
+\end{itemize}
+%http://www.mvstat.net/tduong/research/seminars/seminar-2001-05/
+On the other hand, kernel smoothing:
+\begin{itemize}
+	\item does not depend on the boundaries of bins as all the theoretical bins are recentred for each sampling unit.
+	\item is, as the name suggests, a smooth density estimation.
+	\item can take an optimal bandwidth using estimates such as by minimising the optimality criterion: \textit{Asymptotic Mean Integrated Squared Error} which is defined below.
+\end{itemize}
+
+\begin{defn}
+	\textbf{Kernel density estimation}:\\
+	$K(x)$ is defined as the chosen kernel which is a non-negative function that integrates to one. $h$ is defined as the bandwidth of the KDE. First I define $(x_1,...,x_n)$ to be sampled from some distribution with unknown distribution $f(x)$, $x_i$ are univariate independent and identically distributed, the kernel density estimator is then defined as follows: 
+	\begin{align*}
+	\hat{f}_h(x) := \frac{1}{nk} \sum_{i=1}^{n}K\Big(\frac{x - x_i}{h}\Big)
+	\end{align*}
+\end{defn}
+
+\begin{defn}
+	The \textbf{Mean Integrated Squared Error} is defined as follows to estimate the optimal bandwidth, $\hat{h}$:
+	\begin{align*}
+	MISE(h) = \mathbf{E}\Big[ \int (\hat{f}_h(x) - f(x))^2 dx \Big]
+	\end{align*}
+\end{defn}	
+\begin{defn}
+	The \textbf{Asymptotic Mean Integrated Squared Error} is then defined as follows:
+	\begin{align*}
+	AMISE(h) = \frac{\int (K(x))^2 dx}{nh^2} + \frac{1}{4}\mathbf{E}_K[X^2]h^4\int (f^{''}(x))^2 dx
+	\end{align*}
+\end{defn}
+
+I will use $\hat{f}_h(x)$ to estimate the centre of the density of CDS returns.
+
+\subsection{Generalised Pareto Distribution}
+
+\begin{thm}
+	\textbf{Picklands-Balkema-de Haan}:\\
+	For a very large family of distributions, for a sufficiently large threshold value, $u$, and data points $p_i \ \forall i \in \{1,...,n\}$ where $n$ is the number of points; the distribution of excesses, $(p_i - u)$, is well approximated by a \emph{Generalised Pareto Distribution}.\\
+	This family of distributions includes Gaussian, lognormal, beta, exponential, F, gamma, Student t uniform...
+\end{thm}
+
+To apply the theorem above to the left tail or both tails, we consider the absolute excesses, $|p_i - u|$, instead.
+
+\begin{defn}
+	\textbf{GPD CDF}:\\
+	\begin{equation}
+	G_{k,\mu,s} (x) := \left\{
+	\begin{array}{@{}ll@{}}
+	1 - (1 - k(x-\mu)/s)^{1/k}, & \text{if}\ k \ne 0 \\
+	1 - exp(-(x-\mu)/s), & \text{otherwise}
+	\end{array}
+	\right.
+	\end{equation} 
+	where 
+	\begin{itemize}
+		\item $k$ is the shape of the distribution.
+		\item $\mu$ is the location of the distribution (i.e. for modelling excesses will most likely start near 0+).
+		\item $s$ is the scale of the distribution (a variance parameter).
+	\end{itemize}
+\end{defn}
+
+\subsection{Semi-parametric fitting}
+
+With GPD defined above, one can define a CDF modelling the entire data set as follows: 
+\begin{equation}
+F(x) := \left\{
+\begin{array}{@{}ll@{}}
+F_n(u)\Big[1-G(u-x)\Big], & \text{if}\ x < u \\
+\Big[1 - F_n(u)\Big]G(x-u) + F_n(u), & \text{if}\ x \geq u \\
+F_n(x), & \text{otherwise}
+\end{array}
+\right.
+\end{equation}
+where $F_n(x)$ is a function that estimates the centre of the distribution and integrates to 1. This implies the PDF:
+\begin{equation}
+f(x) := \left\{
+\begin{array}{@{}ll@{}}
+F_n(u)g(u-x), & \text{if}\ x < u \\
+\Big[1 - F_n(u)\Big]g(x-u), & \text{if}\ x \geq u \\
+f_n(x), & \text{otherwise}
+\end{array}
+\right.
+\end{equation}
+where $g(x) := \frac{d}{dx}(G(x))$.
+
+\begin{exmp}
+	Example of test data and how the parametric fit compared to actual gaussian mix
+\end{exmp}
+
+\subsubsection{Choosing the Threshold, u}
+I choose the 95\% percentile of the sample data as a value for $u$ because I obtain excesses from both tails which gives me 10\% of the data to fit the GPD. To parametrise the GPD, the \emph{method of moments} is used.
+
+%INclude Plots of Fits here.
+
+\subsection{Semi-parametric Revised Rank Correlation}
+
+I fit the Historical Credit Spread Data using my implementation of the Semi-parametric fit described above which results in the data having been transformed by it's own (semi-parametric) CDF. I then recalculate the correlation matrix from these values which is given below:
+
+\begin{center}
+	\begin{tabular}{|l|l|l|l|l|c|c|c|c|c|}
+		\hline
+		& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4}\\\hhline{|=|=|=|=|=|=|}
+		\textbf{0} & 1.0 & 0.873078750958 & 0.158978473828 & 0.620707344076 & 0.882818382128\\
+		\textbf{1} & 0.873078750958 & 1.0 & 0.427120471404 & 0.823583184822 & 0.975301584703\\
+		\textbf{2} & 0.158978473828 & 0.427120471404 & 1.0 & 0.763272964379 & 0.337685521639\\
+		\textbf{3} & 0.620707344076 & 0.823583184822 & 0.763272964379 & 1.0 & 0.757861144396\\
+		\textbf{4} & 0.882818382128 & 0.975301584703 & 0.337685521639 & 0.757861144396 & 1.0\\
+		\hline
+	\end{tabular}
+\end{center}
+
+The revised correlation matrix is calculated from 5 times as many data points as we don't look at weekly returns for the revised correlation. This gives us a consistently more extreme pairwise correlations.\\
+
+To perform a direct comparison, I take the difference between the revised and the original rank correlation:
+
+\begin{center}
+	\begin{tabular}{|l|l|l|l|l|c|c|c|c|c|}
+		\hline
+		& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4}\\\hhline{|=|=|=|=|=|=|}
+		\textbf{0} & 0.0 & 0.123496793979 & -0.248523841217 & 0.157850743105 & 0.133321772306\\
+		\textbf{1} & 0.123496793979 & 0.0 & -0.0342520250493 & 0.384165442096 & 0.0604306327659\\
+		\textbf{2} & -0.248523841217 & -0.0342520250493 & 0.0 & -0.106754175825 & -0.142250689909\\
+		\textbf{3} & 0.157850743105 & 0.384165442096 & -0.106754175825 & 0.0 & 0.275810916013\\
+		\textbf{4} & 0.133321772306 & 0.0604306327659 & -0.142250689909 & 0.275810916013 & 0.0\\
+		\hline
+	\end{tabular}
+\end{center}
+
+I now reconsider the difference matrix between the revised rank correlation and the pearson correlation below:
+
+\begin{center}
+	\begin{tabular}{|l|l|l|l|l|c|c|c|c|c|}
+		\hline
+		& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4}\\\hhline{|=|=|=|=|=|=|}
+		\textbf{0} & 0.0 & 0.0564305197565 & -0.335196502189 & 0.0166533166992 & 0.0834865398768\\
+		\textbf{1} & 0.0564305197565 & 0.0 & -0.0892295330289 & 0.233792143026 & 0.0365177657\\
+		\textbf{2} & -0.335196502189 & -0.0892295330289 & 0.0 & -0.120490643603 & -0.171788340472\\
+		\textbf{3} & 0.0166533166992 & 0.233792143026 & -0.120490643603 & 0.0 & 0.175824187738\\
+		\textbf{4} & 0.0834865398768 & 0.0365177657 & -0.171788340472 & 0.175824187738 & 0.0\\
+		\hline
+	\end{tabular}
+\end{center}
+
+Note the sizeable change in the Deutsche Bank - JPMorgan correlation of -0.335196502189 from -0.0866726609714 before.
+
 \section{Random number generation}
 
 To sample from the parametrised copulas, one needs to be able to sample random variables from U[0,1]. Computationally, the following random number generation techniques are commonly used:
@@ -707,113 +865,27 @@ The simplest initialisation is \textbf{Unit initialisation} which is easy to imp
 Instead, one can use \textbf{Pseudo-random initialisation} which uses a separate pseudo-random number generator to generate $u_{kl}^* \sim U[0,1]$. One then defines $w_{kl} = int(u_{kl}^* \cdot 2^{l-1})$ where $int(x)$ is a function that rounds $x$ to the nearest integer and $w_{kl}$ is only used when it satisfies $w_{kl} \% 2 = 1$. Then: $$v_{kl} = w_{kl} \cdot 2^{b-l}$$
 I use the pseudo-random initialisation in my implementation as the behaviour of the generator is much better than unit initialisation.
 
-\section{Extreme Value Theory}
+\section{Copula Parametrisation \& Calculation}
+%See slide 48 of CDO And Copula Models presentation.\\
 
-It is often the case that financial data is not well represented in the tails of a Gaussian distributions. To solve this shortcoming, one can employ Extreme Value Theory (EVT). EVT is a statistical tool to deal with extreme deviations from a distribution's median. In general, EVT is used to characterise the distribution of a sample maximum of a distribution values above a certain threshold (tail(s)).\\ 
-%Paper: Modeling TAil Behaviour with Extreme Value Theory by Damon Levine from Risk Management Journal.
-Here we use a Generalised Pareto Distribution (GPD) to model the tail(s). The Picklands-Balkema-de Haan Theorem, stated below, supports this choice.\\ 
-When employing Extreme value theory to model the tails, I apply a semi-parametric fit to the centre of the data sample using Kernel Smoothing which is a parametric alternative to a histogram.\\
+To use the copulas in the Monte Carlo simulation, one only needs to simulate Uniform random variables from the underlying copula within the scope of this project. With this in mind, the following algorithms are implemented to parametrise the underlying copula using the correlation of reference name defaults and then simulate Uniform random variables.\\
 
-\subsection{Kernel Smoothing}
+To start with, I apply the following to simulate from the underlying Gaussian copula:
+\begin{enumerate}
+	\item Apply \emph{matrix decomposition} to the Correlation matrix, $\Sigma$: $\Sigma = A A^{T}$
+	\item Simulate $n$, where $n$ is the number of reference names, random draws from a uniform distribution, $U$ using a low discrepancy number generator.
+	\item Convert the Uniform random variables to standard normal random variables, $Z$, by applying the inverse standard normal CDF.
+	\item Convert the standard normal variables to correlated normal variables: $X = AZ$
+	\item Apply the \emph{inverse marginal CDF} (Gaussian CDF) to each correlated normal variable to obtain the simulated default time for each reference name.
+\end{enumerate}
 
-% Add https://mglerner.github.io/posts/histograms-and-kernel-density-estimation-kde-2.html?p=28 to references.
-Kernel smoothing is a parametric method of density estimation. Like a histogram (non-parametric density estimation), kernel smoothing looks to create a distribution for the data based on which section (bin) of the data each sampling unit fits within. The difference between the two is that a histogram:
-\begin{itemize}
-	\item predefines discrete bins for this data which heavily influences the observed distribution of the data.
-	\item is \emph{very} dependent on the choice of boundaries for each bin.
-\end{itemize}
-%http://www.mvstat.net/tduong/research/seminars/seminar-2001-05/
-On the other hand, kernel smoothing:
-\begin{itemize}
-	\item does not depend on the boundaries of bins as all the theoretical bins are recentred for each sampling unit.
-	\item is, as the name suggests, a smooth density estimation.
-	\item can take an optimal bandwidth using estimates such as by minimising the optimality criterion: \textit{Asymptotic Mean Integrated Squared Error} which is defined below.
-\end{itemize}
+To simulate from the underlying Students T copula, I apply the steps above excluding the final marginal transformation; I then apply the following additional steps to simulate from the Students T copula:
+\begin{enumerate}
+	\item Draw a vector of squared uniform random variables $\bar{u}$ of length equal to the degrees of freedom, $df$, of the underlying Students T copula.
+	\item Next create a new scaled vector of correlated random variables by transforming each correlated standard normal random variable from above by: $\Psi := X / \sqrt{\frac{\sum_{i=0}^{(df-1)}\bar{u}_i}{\epsilon}}$
+	\item Apply the \emph{inverse marginal CDF} (Students T CDF) to each scaled correlated normal variable ($\Psi$) to obtain the simulated default time for each reference name.
+\end{enumerate}
 
-\begin{defn}
-	\textbf{Kernel density estimation}:\\
-	$K(x)$ is defined as the chosen kernel which is a non-negative function that integrates to one. $h$ is defined as the bandwidth of the KDE. First I define $(x_1,...,x_n)$ to be sampled from some distribution with unknown distribution $f(x)$, $x_i$ are univariate independent and identically distributed, the kernel density estimator is then defined as follows: 
-	\begin{align*}
-	\hat{f}_h(x) := \frac{1}{nk} \sum_{i=1}^{n}K\Big(\frac{x - x_i}{h}\Big)
-	\end{align*}
-\end{defn}
-
-\begin{defn}
-	The \textbf{Mean Integrated Squared Error} is defined as follows to estimate the optimal bandwidth, $\hat{h}$:
-	\begin{align*}
-	MISE(h) = \mathbf{E}\Big[ \int (\hat{f}_h(x) - f(x))^2 dx \Big]
-	\end{align*}
-\end{defn}	
-\begin{defn}
-	The \textbf{Asymptotic Mean Integrated Squared Error} is then defined as follows:
-	\begin{align*}
-	AMISE(h) = \frac{\int (K(x))^2 dx}{nh^2} + \frac{1}{4}\mathbf{E}_K[X^2]h^4\int (f^{''}(x))^2 dx
-	\end{align*}
-\end{defn}
-
-I will use $\hat{f}_h(x)$ to estimate the centre of the density of CDS returns.
-
-\subsection{Generalised Pareto Distribution}
-
-\begin{thm}
-	\textbf{Picklands-Balkema-de Haan}:\\
-	For a very large family of distributions, for a sufficiently large threshold value, $u$, and data points $p_i \ \forall i \in \{1,...,n\}$ where $n$ is the number of points; the distribution of excesses, $(p_i - u)$, is well approximated by a \emph{Generalised Pareto Distribution}.\\
-	This family of distributions includes Gaussian, lognormal, beta, exponential, F, gamma, Student t uniform...
-\end{thm}
-
-To apply the theorem above to the left tail or both tails, we consider the absolute excesses, $|p_i - u|$, instead.
-
-\begin{defn}
-	\textbf{GPD CDF}:\\
-	\begin{equation}
-		G_{k,\mu,s} (x) := \left\{
-			\begin{array}{@{}ll@{}}
-				1 - (1 - k(x-\mu)/s)^{1/k}, & \text{if}\ k \ne 0 \\
-				1 - exp(-(x-\mu)/s), & \text{otherwise}
-			\end{array}
-		\right.
-	\end{equation} 
-	where 
-	\begin{itemize}
-		\item $k$ is the shape of the distribution.
-		\item $\mu$ is the location of the distribution (i.e. for modelling excesses will most likely start near 0+).
-		\item $s$ is the scale of the distribution (a variance parameter).
-	\end{itemize}
-\end{defn}
-
-\subsection{Semi-parametric fitting}
-
-With GPD defined above, one can define a CDF modelling the entire data set as follows: 
-\begin{equation}
-	F(x) := \left\{
-		\begin{array}{@{}ll@{}}
-			F_n(u)\Big[1-G(u-x)\Big], & \text{if}\ x < u \\
-			\Big[1 - F_n(u)\Big]G(x-u) + F_n(u), & \text{if}\ x \geq u \\
-			F_n(x), & \text{otherwise}
-		\end{array}
-\right.
-\end{equation}
-where $F_n(x)$ is a function that estimates the centre of the distribution and integrates to 1. This implies the PDF:
-\begin{equation}
-	f(x) := \left\{
-		\begin{array}{@{}ll@{}}
-			F_n(u)g(u-x), & \text{if}\ x < u \\
-			\Big[1 - F_n(u)\Big]g(x-u), & \text{if}\ x \geq u \\
-			f_n(x), & \text{otherwise}
-		\end{array}
-	\right.
-\end{equation}
-where $g(x) := \frac{d}{dx}(G(x))$.
-
-\begin{exmp}
-	Example of test data and how the parametric fit compared to actual gaussian mix
-\end{exmp}
-
-\subsubsection{Choosing the Threshold, u}
-I choose the 95\% percentile of the sample data as a value for $u$ because I obtain excesses from both tails which gives me 10\% of the data to fit the GPD. To parametrise the GPD, the \emph{method of moments} is used.
-
-
-%Insert EVT theory and code.
 
 \chapter{Simulation \& Observations}
 
