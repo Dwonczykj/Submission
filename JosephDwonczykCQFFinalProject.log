@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.1)  11 MAY 2018 10:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.12.1)  13 MAY 2018 18:01
 entering extended mode
 **./JosephDwonczykCQFFinalProject.tex
 (JosephDwonczykCQFFinalProject.tex
@@ -486,41 +486,46 @@ Overfull \hbox (421.25076pt too wide) in paragraph at lines 240--246
  [] 
  []
 
+
+Overfull \hbox (411.11206pt too wide) in paragraph at lines 249--256
+ [] 
+ []
+
 [8] [9
 
 ]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
 [12] [13] [14]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--468
+Underfull \hbox (badness 10000) in paragraph at lines 476--478
 
  []
 
@@ -528,21 +533,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 466--468
 File: Sonia_Discount_Curve.png Graphic file (type png)
 
 <use Sonia_Discount_Curve.png>
-Package pdftex.def Info: Sonia_Discount_Curve.png used on input line 479.
+Package pdftex.def Info: Sonia_Discount_Curve.png used on input line 489.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [15
 
  <./Sonia_Discount_Curve.png>]
 Chapter 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--509
+Underfull \hbox (badness 10000) in paragraph at lines 517--519
 
  []
 
 <Hazard_Rates.png, id=290, 722.7pt x 430.7292pt>
 File: Hazard_Rates.png Graphic file (type png)
  <use Hazard_Rates.png>
-Package pdftex.def Info: Hazard_Rates.png used on input line 514.
+Package pdftex.def Info: Hazard_Rates.png used on input line 524.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
 [16
@@ -550,7 +555,7 @@ Package pdftex.def Info: Hazard_Rates.png used on input line 514.
 ] [17 <./Hazard_Rates.png>]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
 
  []
 
@@ -559,7 +564,7 @@ File: Historical_Credit_Spreads_Data.png Graphic file (type png)
 
 <use Historical_Credit_Spreads_Data.png>
 Package pdftex.def Info: Historical_Credit_Spreads_Data.png used on input line 
-529.
+539.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [18
 
@@ -568,15 +573,15 @@ Package pdftex.def Info: Historical_Credit_Spreads_Data.png used on input line
 File: Weekly_log_returns.png Graphic file (type png)
 
 <use Weekly_log_returns.png>
-Package pdftex.def Info: Weekly_log_returns.png used on input line 560.
+Package pdftex.def Info: Weekly_log_returns.png used on input line 570.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [19 <./Historical_Credit_Spreads_Data.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
 
  []
 
 [20 <./Weekly_log_returns.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 589--591
+Underfull \hbox (badness 10000) in paragraph at lines 599--601
 
  []
 
@@ -584,10 +589,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 589--591
 File: Weekly_absolute_diffs.png Graphic file (type png)
 
 <use Weekly_absolute_diffs.png>
-Package pdftex.def Info: Weekly_absolute_diffs.png used on input line 596.
+Package pdftex.def Info: Weekly_absolute_diffs.png used on input line 606.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--608
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
 
  []
 
@@ -595,250 +600,305 @@ Underfull \hbox (badness 10000) in paragraph at lines 606--608
 File: Inverse_ECDF_Rank.png Graphic file (type png)
 
 <use Inverse_ECDF_Rank.png>
-Package pdftex.def Info: Inverse_ECDF_Rank.png used on input line 613.
+Package pdftex.def Info: Inverse_ECDF_Rank.png used on input line 623.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
  [21 <./Weekly_absolute_diffs.png>]
-Overfull \hbox (14.72821pt too wide) in paragraph at lines 637--647
+Overfull \hbox (14.72821pt too wide) in paragraph at lines 647--657
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--655
+Underfull \hbox (badness 10000) in paragraph at lines 661--665
 
  []
 
 [22 <./Inverse_ECDF_Rank.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 716--717
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 773--774
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 764.
+
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 764.
+
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 764.
+
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 764.
+
+
+LaTeX Warning: Reference `' on page 24 undefined on input line 764.
+
+
+<SemiParametricFit_BARCLAY_CDS_EUR_SR_5Y_D14.png, id=345, 505.89pt x 502.9992pt
+>
+File: SemiParametricFit_BARCLAY_CDS_EUR_SR_5Y_D14.png Graphic file (type png)
+ <use SemiParametricFit_BARCLAY_CDS_EUR_SR_5Y_D14.png>
+Package pdftex.def Info: SemiParametricFit_BARCLAY_CDS_EUR_SR_5Y_D14.png used o
+n input line 768.
+(pdftex.def)             Requested size: 426.79134pt x 424.35847pt.
+ [24]
+<SemiParametricFit_DB_CDS_EUR_SR_5Y_D14.png, id=355, 505.89pt x 502.9992pt>
+File: SemiParametricFit_DB_CDS_EUR_SR_5Y_D14.png Graphic file (type png)
+
+<use SemiParametricFit_DB_CDS_EUR_SR_5Y_D14.png>
+Package pdftex.def Info: SemiParametricFit_DB_CDS_EUR_SR_5Y_D14.png used on inp
+ut line 776.
+(pdftex.def)             Requested size: 426.79134pt x 424.35847pt.
+ [25 <./SemiParametricFit_BARCLAY_CDS_EUR_SR_5Y_D14.png>]
+<SemiParametricFit_GS_CDS_USD_SR_5Y_D14.png, id=362, 505.89pt x 502.9992pt>
+File: SemiParametricFit_GS_CDS_USD_SR_5Y_D14.png Graphic file (type png)
+
+<use SemiParametricFit_GS_CDS_USD_SR_5Y_D14.png>
+Package pdftex.def Info: SemiParametricFit_GS_CDS_USD_SR_5Y_D14.png used on inp
+ut line 784.
+(pdftex.def)             Requested size: 426.79134pt x 424.35847pt.
+ [26 <./SemiParametricFit_DB_CDS_EUR_SR_5Y_D14.png>]
+<SemiParametricFit_JPMCC_CDS_USD_SR_5Y_D14.png, id=369, 505.89pt x 502.9992pt>
+File: SemiParametricFit_JPMCC_CDS_USD_SR_5Y_D14.png Graphic file (type png)
+
+<use SemiParametricFit_JPMCC_CDS_USD_SR_5Y_D14.png>
+Package pdftex.def Info: SemiParametricFit_JPMCC_CDS_USD_SR_5Y_D14.png used on 
+input line 792.
+(pdftex.def)             Requested size: 426.79134pt x 424.35847pt.
+ [27 <./SemiParametricFit_GS_CDS_USD_SR_5Y_D14.png>]
+<SemiParametricFit_RBSPLC_CDS_EUR_SR_5Y_D14.png, id=376, 505.89pt x 502.9992pt>
+File: SemiParametricFit_RBSPLC_CDS_EUR_SR_5Y_D14.png Graphic file (type png)
+<use SemiParametricFit_RBSPLC_CDS_EUR_SR_5Y_D14.png>
+Package pdftex.def Info: SemiParametricFit_RBSPLC_CDS_EUR_SR_5Y_D14.png used on
+ input line 800.
+(pdftex.def)             Requested size: 426.79134pt x 424.35847pt.
+ [28 <./SemiParametricFit_JPMCC_CDS_USD_SR_5Y_D14.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 824--825
 
  []
 
-
-Overfull \hbox (1.39485pt too wide) in paragraph at lines 778--788
+[29 <./SemiParametricFit_RBSPLC_CDS_EUR_SR_5Y_D14.png>]
+Overfull \hbox (1.39485pt too wide) in paragraph at lines 829--839
  [] 
  []
 
 
-Overfull \hbox (4.72823pt too wide) in paragraph at lines 793--803
+Overfull \hbox (4.72823pt too wide) in paragraph at lines 844--854
  [] 
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 815--816
+
+Underfull \hbox (badness 10000) in paragraph at lines 866--867
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 818--819
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--827
+Underfull \hbox (badness 10000) in paragraph at lines 877--878
 
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 852--853
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 903--904
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 871--872
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
 
  []
 
-[26] [27]
+[32]
 Chapter 9.
-<Gaussian_Copula_1_vs_Gaussian_Copula_2.png, id=385, 722.7pt x 430.7292pt>
+<Gaussian_Copula_1_vs_Gaussian_Copula_2.png, id=421, 722.7pt x 430.7292pt>
 File: Gaussian_Copula_1_vs_Gaussian_Copula_2.png Graphic file (type png)
 
 <use Gaussian_Copula_1_vs_Gaussian_Copula_2.png>
 Package pdftex.def Info: Gaussian_Copula_1_vs_Gaussian_Copula_2.png used on inp
-ut line 900.
+ut line 951.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<copulademo_08.png, id=388, 562.1pt x 421.575pt>
+<copulademo_08.png, id=424, 562.1pt x 421.575pt>
 File: copulademo_08.png Graphic file (type png)
  <use copulademo_08.png>
-Package pdftex.def Info: copulademo_08.png used on input line 910.
+Package pdftex.def Info: copulademo_08.png used on input line 961.
 (pdftex.def)             Requested size: 426.79134pt x 320.09155pt.
 
-[28
+[33
 
  <./Gaussian_Copula_1_vs_Gaussian_Copula_2.png>]
-<Gaussian_Copula_1.png, id=399, 722.7pt x 430.7292pt>
+<Gaussian_Copula_1.png, id=435, 722.7pt x 430.7292pt>
 File: Gaussian_Copula_1.png Graphic file (type png)
 
 <use Gaussian_Copula_1.png>
-Package pdftex.def Info: Gaussian_Copula_1.png used on input line 920.
+Package pdftex.def Info: Gaussian_Copula_1.png used on input line 971.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [29 <./copulademo_08.png (PNG copy)>]
-<T_Copula_3_vs_T_Copula_4.png, id=404, 722.7pt x 430.7292pt>
+ [34 <./copulademo_08.png (PNG copy)>]
+<T_Copula_3_vs_T_Copula_4.png, id=440, 722.7pt x 430.7292pt>
 File: T_Copula_3_vs_T_Copula_4.png Graphic file (type png)
 
 <use T_Copula_3_vs_T_Copula_4.png>
-Package pdftex.def Info: T_Copula_3_vs_T_Copula_4.png used on input line 928.
+Package pdftex.def Info: T_Copula_3_vs_T_Copula_4.png used on input line 979.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<T_Copula_3.png, id=405, 722.7pt x 430.7292pt>
+<T_Copula_3.png, id=441, 722.7pt x 430.7292pt>
 File: T_Copula_3.png Graphic file (type png)
  <use T_Copula_3.png>
-Package pdftex.def Info: T_Copula_3.png used on input line 936.
+Package pdftex.def Info: T_Copula_3.png used on input line 987.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [30 <./Gaussian_Copula_1.png> <./T_Copula_3_vs_T_Copula_4.png>]
-<Compensation_Leg_Running_Average_(Gaussian_Copula).png, id=415, 722.7pt x 430.
+ [35 <./Gaussian_Copula_1.png> <./T_Copula_3_vs_T_Copula_4.png>]
+<Compensation_Leg_Running_Average_(Gaussian_Copula).png, id=450, 722.7pt x 430.
 7292pt>
 File: Compensation_Leg_Running_Average_(Gaussian_Copula).png Graphic file (type
  png)
  <use Compensation_Leg_Running_Average_(Gaussian_Copula).png>
 Package pdftex.def Info: Compensation_Leg_Running_Average_(Gaussian_Copula).png
- used on input line 949.
+ used on input line 1000.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [31 <./T_Copula_3.png>]
-<Compensation_Leg_Running_Average_(Student's_T_Copula).png, id=422, 722.7pt x 4
+ [36 <./T_Copula_3.png>]
+<Compensation_Leg_Running_Average_(Student's_T_Copula).png, id=458, 722.7pt x 4
 30.7292pt>
 File: Compensation_Leg_Running_Average_(Student's_T_Copula).png Graphic file (t
 ype png)
  <use Compensation_Leg_Running_Average_(Student's_T_Copula).png>
 Package pdftex.def Info: Compensation_Leg_Running_Average_(Student's_T_Copula).
-png used on input line 957.
+png used on input line 1008.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png, id=423, 722.7pt x 
+<Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png, id=459, 722.7pt x 
 430.7292pt>
 File: Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png Graphic file (
 type png)
  <use Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png>
 Package pdftex.def Info: Running_Variance_of_Compensation_Leg_(Gaussian_Copula)
-.png used on input line 965.
+.png used on input line 1016.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-[32 <./Compensation_Leg_Running_Average_(Gaussian_Copula).png> <./Compensation_
+[37 <./Compensation_Leg_Running_Average_(Gaussian_Copula).png> <./Compensation_
 Leg_Running_Average_(Student's_T_Copula).png>]
-<Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png, id=432, 722.7pt
+<Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png, id=468, 722.7pt
  x 430.7292pt>
 File: Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png Graphic fil
 e (type png)
 
 <use Running_Variance_of_Compensation_Leg_(Student's_T_Copula).png>
 Package pdftex.def Info: Running_Variance_of_Compensation_Leg_(Student's_T_Copu
-la).png used on input line 973.
+la).png used on input line 1024.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Premium_Leg_Running_Average_(Gaussian_Copula).png, id=433, 722.7pt x 430.7292p
+<Premium_Leg_Running_Average_(Gaussian_Copula).png, id=469, 722.7pt x 430.7292p
 t>
 File: Premium_Leg_Running_Average_(Gaussian_Copula).png Graphic file (type png)
 
  <use Premium_Leg_Running_Average_(Gaussian_Copula).png>
 Package pdftex.def Info: Premium_Leg_Running_Average_(Gaussian_Copula).png used
- on input line 981.
+ on input line 1032.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [33 <./Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png> <./Running_
+ [38 <./Running_Variance_of_Compensation_Leg_(Gaussian_Copula).png> <./Running_
 Variance_of_Compensation_Leg_(Student's_T_Copula).png>]
-<Premium_Leg_Running_Average_(Student's_T_Copula).png, id=442, 722.7pt x 430.72
+<Premium_Leg_Running_Average_(Student's_T_Copula).png, id=478, 722.7pt x 430.72
 92pt>
 File: Premium_Leg_Running_Average_(Student's_T_Copula).png Graphic file (type p
 ng)
  <use Premium_Leg_Running_Average_(Student's_T_Copula).png>
 Package pdftex.def Info: Premium_Leg_Running_Average_(Student's_T_Copula).png u
-sed on input line 989.
+sed on input line 1040.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Running_Variance_of_Premium_Leg_(Gaussian_Copula).png, id=443, 722.7pt x 430.7
+<Running_Variance_of_Premium_Leg_(Gaussian_Copula).png, id=479, 722.7pt x 430.7
 292pt>
 File: Running_Variance_of_Premium_Leg_(Gaussian_Copula).png Graphic file (type 
 png)
  <use Running_Variance_of_Premium_Leg_(Gaussian_Copula).png>
 Package pdftex.def Info: Running_Variance_of_Premium_Leg_(Gaussian_Copula).png 
-used on input line 997.
+used on input line 1048.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [34 <./Premium_Leg_Running_Average_(Gaussian_Copula).png> <./Premium_Leg_Runni
+ [39 <./Premium_Leg_Running_Average_(Gaussian_Copula).png> <./Premium_Leg_Runni
 ng_Average_(Student's_T_Copula).png>]
-<Running_Variance_of_Premium_Leg_(Student's_T_Copula).png, id=452, 722.7pt x 43
+<Running_Variance_of_Premium_Leg_(Student's_T_Copula).png, id=488, 722.7pt x 43
 0.7292pt>
 File: Running_Variance_of_Premium_Leg_(Student's_T_Copula).png Graphic file (ty
 pe png)
  <use Running_Variance_of_Premium_Leg_(Student's_T_Copula).png>
 Package pdftex.def Info: Running_Variance_of_Premium_Leg_(Student's_T_Copula).p
-ng used on input line 1005.
+ng used on input line 1056.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-Overfull \hbox (56.32657pt too wide) in paragraph at lines 1015--1022
+Overfull \hbox (56.32657pt too wide) in paragraph at lines 1066--1073
  [] 
  []
 
-[35 <./Running_Variance_of_Premium_Leg_(Gaussian_Copula).png> <./Running_Varian
+[40 <./Running_Variance_of_Premium_Leg_(Gaussian_Copula).png> <./Running_Varian
 ce_of_Premium_Leg_(Student's_T_Copula).png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1026--1027
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1078
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1028--1029
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1080
 
  []
 
-[36]
+[41]
 Chapter 10.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1098
 
  []
 
 
-<Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png, id=468, 722.7
+<Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png, id=503, 722.7
 pt x 430.7292pt>
 File: Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png Graphic f
 ile (type png)
 
 <use Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png>
 Package pdftex.def Info: Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(G
-auss).png used on input line 1052.
+auss).png used on input line 1103.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [37
+ [42
 
 ]
-<Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png, id=473, 722.7pt x
+<Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png, id=509, 722.7pt x
  430.7292pt>
 File: Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png Graphic file 
 (type png)
  <use Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T).png>
 Package pdftex.def Info: Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(T
-).png used on input line 1062.
+).png used on input line 1113.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-[38 <./Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png> <./Sens
+[43 <./Sensitivity_of_FairSpread_to_changing_Recovery_Rate_(Gauss).png> <./Sens
 itivity_of_FairSpread_to_changing_Recovery_Rate_(T).png>]
 <Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_reference_name_
-CDS_spreads_(Gauss).png, id=482, 722.7pt x 430.7292pt>
+CDS_spreads_(Gauss).png, id=518, 722.7pt x 430.7292pt>
 File: Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_reference_
 name_CDS_spreads_(Gauss).png Graphic file (type png)
 
 <use Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_reference_n
 ame_CDS_spreads_(Gauss).png>
 Package pdftex.def Info: Sensitivity_of_fair_spread_to_a_150_bps_increase_in_in
-dividual_reference_name_CDS_spreads_(Gauss).png used on input line 1076.
+dividual_reference_name_CDS_spreads_(Gauss).png used on input line 1127.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
 <Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_name_CD
-S_spreads_(T).png, id=483, 722.7pt x 430.7292pt>
+S_spreads_(T).png, id=519, 722.7pt x 430.7292pt>
 File: Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_na
 me_CDS_spreads_(T).png Graphic file (type png)
 
 <use Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_nam
 e_CDS_spreads_(T).png>
 Package pdftex.def Info: Sensitivity_of_fair_spread_to_150_bps_increase_in_indi
-vidual_reference_name_CDS_spreads_(T).png used on input line 1085.
+vidual_reference_name_CDS_spreads_(T).png used on input line 1136.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [39 <./Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_referenc
+ [44 <./Sensitivity_of_fair_spread_to_a_150_bps_increase_in_individual_referenc
 e_name_CDS_spreads_(Gauss).png>]
 <Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_JPMor
-gan_&_Goldman_Sachs_by_0,1_(Gaussian).png, id=490, 722.7pt x 430.7292pt>
+gan_&_Goldman_Sachs_by_0,1_(Gaussian).png, id=526, 722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_
 JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png Graphic file (type png)
 
@@ -846,45 +906,45 @@ JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png Graphic file (type png)
 PMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deuts
 che_Bank_&_RBS_and_JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png used on input
- line 1111.
+ line 1162.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [40 <./Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_
+ [45 <./Sensitivity_of_fair_spread_to_150_bps_increase_in_individual_reference_
 name_CDS_spreads_(T).png>]
-<Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png, id=498,
+<Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png, id=534,
  722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png Gra
 phic file (type png)
 
 <use Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Gaussian).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1
-_(Gaussian).png used on input line 1119.
+_(Gaussian).png used on input line 1170.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png, id=499, 722.
+<Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png, id=535, 722.
 7pt x 427.8384pt>
 File: Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png Graphic 
 file (type png)
 
 <use Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png>
 Package pdftex.def Info: Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gau
-ssian).png used on input line 1127.
+ssian).png used on input line 1178.
 (pdftex.def)             Requested size: 426.79134pt x 252.664pt.
- [41 <./Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_an
+ [46 <./Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_an
 d_JPMorgan_&_Goldman_Sachs_by_0,1_(Gaussian).png> <./Tweaked_Correlation_betwee
 n_Barclays_&_JPMorgan_by_0,1_(Gaussian).png>]
 <Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussian).p
-ng, id=508, 722.7pt x 430.7292pt>
+ng, id=544, 722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussi
 an).png Graphic file (type png)
 
 <use Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussia
 n).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sa
-chs_by_-0,1_(Gaussian).png used on input line 1135.
+chs_by_-0,1_(Gaussian).png used on input line 1186.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
 <Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_JPMor
-gan_&_Goldman_Sachs_by_0,1_(Students_T).png, id=509, 722.7pt x 430.7292pt>
+gan_&_Goldman_Sachs_by_0,1_(Students_T).png, id=545, 722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and_
 JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png Graphic file (type png)
 
@@ -892,74 +952,78 @@ JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png Graphic file (type png)
 PMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deuts
 che_Bank_&_RBS_and_JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png used on inp
-ut line 1146.
+ut line 1197.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
- [42 <./Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png> <./Tw
+ [47 <./Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Gaussian).png> <./Tw
 eaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Gaussian).png>
 ]
-<Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png, id=51
-9, 722.7pt x 430.7292pt>
+<Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png, id=55
+4, 722.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png G
 raphic file (type png)
 
 <use Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1_(Students_T).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Barclays_&_JPMorgan_by_0,1
-_(Students_T).png used on input line 1154.
+_(Students_T).png used on input line 1205.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-<Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png, id=520, 72
+<Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png, id=555, 72
 2.7pt x 430.7292pt>
 File: Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png Graphi
 c file (type png)
 
 <use Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png>
 Package pdftex.def Info: Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Stu
-dents_T).png used on input line 1162.
+dents_T).png used on input line 1213.
 (pdftex.def)             Requested size: 426.79134pt x 254.3712pt.
 
-[43 <./Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and
+[48 <./Tweaked_Correlation_between_Barclays_&_JPMorgan,_Deutsche_Bank_&_RBS_and
 _JPMorgan_&_Goldman_Sachs_by_0,1_(Students_T).png> <./Tweaked_Correlation_betwe
 en_Barclays_&_JPMorgan_by_0,1_(Students_T).png>]
 <Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Students_T)
-.png, id=529, 722.7pt x 427.8384pt>
+.png, id=565, 722.7pt x 427.8384pt>
 File: Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Studen
 ts_T).png Graphic file (type png)
 
 <use Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Student
 s_T).png>
 Package pdftex.def Info: Tweaked_Correlation_between_Deutsche_Bank_&_Goldman_Sa
-chs_by_-0,1_(Students_T).png used on input line 1170.
+chs_by_-0,1_(Students_T).png used on input line 1221.
 (pdftex.def)             Requested size: 426.79134pt x 252.664pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1178--1183
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1178--1183
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1234
 
  []
 
-[44 <./Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png> <./T
+[49 <./Tweaked_Correlation_between_JPMorgan_&_RBS_by_0,1_(Students_T).png> <./T
 weaked_Correlation_between_Deutsche_Bank_&_Goldman_Sachs_by_-0,1_(Students_T).p
 ng>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1194.
- [45]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1194.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1245.
+ [50]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1245.
  (JosephDwonczykCQFFinalProject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1245.
 
 Package rerunfilecheck Info: File `JosephDwonczykCQFFinalProject.out' has not c
 hanged.
 (rerunfilecheck)             Checksum: 4639068E69FE52D38015177AC982A680;3243.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1194.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1245.
  ) 
 Here is how much of TeX's memory you used:
- 8480 strings out of 493323
- 130042 string characters out of 3139045
- 337101 words of memory out of 3000000
- 11711 multiletter control sequences out of 15000+200000
+ 8521 strings out of 493323
+ 131546 string characters out of 3139045
+ 337546 words of memory out of 3000000
+ 11737 multiletter control sequences out of 15000+200000
  13740 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,13n,32p,1062b,553s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -981,9 +1045,9 @@ lic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb
 >
-Output written on JosephDwonczykCQFFinalProject.pdf (46 pages, 1855907 bytes).
+Output written on JosephDwonczykCQFFinalProject.pdf (51 pages, 2136614 bytes).
 PDF statistics:
- 643 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
- 500 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 681 PDF objects out of 1000 (max. 8388607)
+ 185 named destinations out of 1000 (max. 500000)
+ 525 words of extra memory for PDF output out of 10000 (max. 10000000)
 

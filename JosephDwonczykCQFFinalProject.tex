@@ -245,6 +245,16 @@ This results in a CVA for each payment date of:
 \end{tabular}
 \end{center}
 
+\begin{center}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10}\\\hhline{|=|=|=|=|=|=|=|=|=|=|=|=|}
+		\textbf{Payment Dates} & 0.0 & 0.5 & 1.0 & 1.5 & 2.0 & 2.5 & 3.0 & 3.5 & 4.0 & 4.5 & 5.0\\
+		\textbf{CVA} & 114572.053867 & 226517.783226 & 327618.884905 & 409869.620738 & 465800.76923 & 488369.230404 & 470661.82866 & 406058.172402 & 288004.981033 & 110131.566038 & nan\\
+		\hline
+	\end{tabular}
+\end{center}
+
 \pagebreak
 
 
@@ -751,7 +761,48 @@ where $g(x) := \frac{d}{dx}(G(x))$.
 \subsubsection{Choosing the Threshold, u}
 I choose the 95\% percentile of the sample data as a value for $u$ because I obtain excesses from both tails which gives me 10\% of the data to fit the GPD. To parametrise the GPD, the \emph{method of moments} is used.
 
-%INclude Plots of Fits here.
+From plots \ref{}, \ref{}, \ref{}, \ref{} and \ref{}, I note that both the semi-parametric distribution for each reference name provides a very good fit to the data. In the case of the CDF plot, this can be observed by comparing the lack of differences between the Empirical CDF and the semi-parametric CDF. I will therefore use the semi-parametric CDF in the calculation of the rank correlation in this project as it contains 5 times as many data points to estimate the correlations from. This is due to interpolation in the centre and extrapolation in the tails of the semi-parametric distribution.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{SemiParametricFit_BARCLAY_CDS_EUR_SR_5Y_D14.png}
+		\caption{Semi-parametric fit of historical credit spreads for Barclays} 
+		\label{SemiParametricFit_BARCLAY_CDS_EUR_SR_5Y_D14}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{SemiParametricFit_DB_CDS_EUR_SR_5Y_D14.png}
+		\caption{Semi-parametric fit of historical credit spreads for Deutsche Bank} 
+		\label{SemiParametricFit_DB_CDS_EUR_SR_5Y_D14}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{SemiParametricFit_GS_CDS_USD_SR_5Y_D14.png}
+		\caption{Semi-parametric fit of historical credit spreads for Goldman Sachs} 
+		\label{SemiParametricFit_GS_CDS_USD_SR_5Y_D14}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{SemiParametricFit_JPMCC_CDS_USD_SR_5Y_D14.png}
+		\caption{Semi-parametric fit of historical credit spreads for JPMorgan} 
+		\label{SemiParametricFit_JPMCC_CDS_USD_SR_5Y_D14}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=15cm]{SemiParametricFit_RBSPLC_CDS_EUR_SR_5Y_D14.png}
+		\caption{Semi-parametric fit of historical credit spreads for RBS} 
+		\label{SemiParametricFit_RBSPLC_CDS_EUR_SR_5Y_D14}
+	\end{center}
+\end{figure}
+
 
 \subsection{Semi-parametric Revised Rank Correlation}
 

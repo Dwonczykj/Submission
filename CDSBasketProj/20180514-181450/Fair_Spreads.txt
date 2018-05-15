@@ -1,0 +1,9 @@
+\begin{center}
+ \begin{tabular}{|l|l|l|l|l|c|c|c|c|c|}
+\hline
+& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4}\\\hhline{|=|=|=|=|=|=|}
+\textbf{Gaussian} & 0.0934450098768 & 0.049723523385 & 0.0268081617382 & 0.00911917013812 & 0.00100422367632\\
+\textbf{Student's T} & 0.147942166353 & 0.0707836977099 & 0.0417272061726 & 0.0220788866255 & 0.00126943504001\\
+\hline
+\end{tabular}
+\end{center}
