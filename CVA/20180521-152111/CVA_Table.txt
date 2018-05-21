@@ -1,0 +1,9 @@
+\begin{center}
+ \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+& \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10}\\\hhline{|=|=|=|=|=|=|=|=|=|=|=|=|}
+\textbf{Payment Dates} & 0.0 & 0.5 & 1.0 & 1.5 & 2.0 & 2.5 & 3.0 & 3.5 & 4.0 & 4.5 & 5.0\\
+\textbf{CVA} & 12825.1088588 & 25011.8771701 & 35569.8201267 & 43396.1471599 & 47614.0022678 & 48065.6940657 & 44834.5073912 & 37690.1250041 & 26238.4957781 & 9963.19181827 & nan\\
+\hline
+\end{tabular}
+\end{center}
